@@ -1,0 +1,65 @@
+.main-banner {
+    width: 100%;
+    aspect-ratio: 1/0.47;
+    max-height: 718px;
+    position: relative;
+}
+
+.main-banner__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.main-banner__content-box {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: clamp-px(16, 35);
+    padding: clamp-px(20, 40) clamp-px(15, 20);
+
+}
+
+.main-banner__title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: clamp-px(32, 60);
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.main-banner__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(14, 17);
+    line-height: 150%;
+    text-align: center;
+    color: var(--1000-belyy);
+    max-width: 1296px;
+    margin-bottom: clamp-px(30, 60);
+}
+
+.main-banner__btn {}
+
+.main-banner__subtitle-wrap {
+    padding: clamp-px(20, 40) 0;
+    width: 100%;
+    border-radius: 0 0 60px 60px;
+    background: var(--accent-color);
+}
+
+.main-banner__subtitle {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: clamp-px(32, 60);
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--black);
+}

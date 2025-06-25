@@ -5,7 +5,7 @@
 
     //container
     .container {
-        max-width: 1400px;
+        max-width: 1444px;
         margin: 0 auto;
 
         @include respond-to("pc") {
@@ -39,9 +39,24 @@
     }
 
     //===========Шрифты============
-
+    --font-family: "Montserrat",
+    sans-serif;
+    --second-family: "Inter",
+    sans-serif;
+    --third-family: "Cormorant Garamond",
+    sans-serif;
+    --font3: "Arial",
+    sans-serif;
+    --font4: "Newsreader",
+    sans-serif;
+    --font5: "Petemoss",
+    sans-serif;
     //===========Цвета===========
-
+    --menyu-pafos-cvet-seryy: #7a7a7a;
+    --1000-belyy: #fff;
+    --accent-color: #ded2c6;
+    --black: #2a2a2a;
+    --additional-color: #20365c;
     // ===========gap===========
     --gap: 20px;
 

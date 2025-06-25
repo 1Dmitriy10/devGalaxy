@@ -1,5 +1,5 @@
 //=============================внешние импорты===================================
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Petemoss&display=swap');
 
 //=============================рутовые стили===================================
 @import "fonts";
@@ -12,6 +12,9 @@
 
 
 //========основные стили============
+body {
+    font-family: var(--font-family)
+}
 
 //==================================
 
@@ -20,6 +23,7 @@
 
 @import "./components/header";
 @import "./components/footer";
+@import "./components/main-banner";
 
 //================Атомарные стили=====================
 @import "./vendor/atomar";
