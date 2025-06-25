@@ -1637,9 +1637,18 @@ body {
 
 .main-banner {
   width: 100%;
+  background-color: var(--black);
+}
+
+.main-banner__top {
+  width: 100%;
   aspect-ratio: 1/0.47;
+  min-height: 280px;
   max-height: 718px;
   position: relative;
+  margin-left: -20px;
+  width: calc(100% + 40px);
+  overflow: hidden;
 }
 
 .main-banner__container {
@@ -1677,7 +1686,7 @@ body {
 .main-banner__title {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: clamp(2rem, 1.4571960298rem + 2.3159636063vw, 3.75rem);
+  font-size: clamp(1.375rem, 0.638337469rem + 3.1430934657vw, 3.75rem);
   text-transform: uppercase;
   text-align: center;
   color: var(--accent-color);
@@ -1693,22 +1702,121 @@ body {
   color: var(--1000-belyy);
   max-width: 1296px;
   margin-bottom: clamp(1.875rem, 1.2934243176rem + 2.4813895782vw, 3.75rem);
+  overflow-y: auto;
+  max-height: 123px;
 }
 
 .main-banner__subtitle-wrap {
-  padding: clamp(1.25rem, 0.8622828784rem + 1.6542597188vw, 2.5rem) 0;
-  width: 100%;
-  border-radius: 0 0 60px 60px;
+  padding: clamp(0.9375rem, 0.452853598rem + 2.0678246485vw, 2.5rem) 0;
+  border-radius: 0 0 clamp(1.25rem, 0.4745657568rem + 3.3085194376vw, 3.75rem) clamp(1.25rem, 0.4745657568rem + 3.3085194376vw, 3.75rem);
   background: var(--accent-color);
+  margin-left: -20px;
+  width: calc(100% + 40px);
 }
 
 .main-banner__subtitle {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: clamp(2rem, 1.4571960298rem + 2.3159636063vw, 3.75rem);
+  font-size: clamp(1.375rem, 0.638337469rem + 3.1430934657vw, 3.75rem);
   text-transform: uppercase;
   text-align: center;
   color: var(--black);
+}
+
+.primary-slider {
+  min-height: clamp(15.625rem, 10.7785359801rem + 20.6782464847vw, 31.25rem);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.primary-slider__container {
+  width: 100%;
+}
+
+.slider-wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.primary-slide__card {
+  height: 150px;
+  border: 1px solid var(--1000-belyy);
+  border-radius: clamp(1.25rem, 1.0561414392rem + 0.8271298594vw, 1.875rem);
+  position: relative;
+  overflow: hidden;
+}
+@media (max-width: 991.98px) {
+  .primary-slide__card {
+    height: 150px;
+  }
+}
+.primary-slide__card > img {
+  border-radius: clamp(1.25rem, 1.0561414392rem + 0.8271298594vw, 1.875rem);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.paphos__primary-slider .swiper-wrapper {
+  padding-top: 95px;
+  padding-bottom: 95px;
+}
+@media (max-width: 991.98px) {
+  .paphos__primary-slider .swiper-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .paphos__primary-slider .swiper-wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.paphos__primary-slider .swiper-slide-active {
+  -webkit-transition: 0.5s !important;
+  transition: 0.5s !important;
+}
+.paphos__primary-slider .swiper-slide-active {
+  -webkit-transition: 0.5s !important;
+  transition: 0.5s !important;
+  -webkit-transform: scale(2.24, 2.2) !important;
+  -ms-transform: scale(2.24, 2.2) !important;
+  transform: scale(2.24, 2.2) !important;
+}
+@media (max-width: 1199.98px) {
+  .paphos__primary-slider .swiper-slide-active {
+    -webkit-transform: scale(1.5, 1.5) !important;
+    -ms-transform: scale(1.5, 1.5) !important;
+    transform: scale(1.5, 1.5) !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .paphos__primary-slider .swiper-slide-active {
+    -webkit-transform: scale(1.2, 1.2) !important;
+    -ms-transform: scale(1.2, 1.2) !important;
+    transform: scale(1.2, 1.2) !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .paphos__primary-slider .swiper-slide-active {
+    -webkit-transform: scale(1, 1) !important;
+    -ms-transform: scale(1, 1) !important;
+    transform: scale(1, 1) !important;
+  }
 }
 
 .gap_15 {

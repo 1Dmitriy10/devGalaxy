@@ -1,8 +1,17 @@
 .main-banner {
     width: 100%;
+    background-color: var(--black);
+}
+
+.main-banner__top {
+    width: 100%;
     aspect-ratio: 1/0.47;
+    min-height: 280px;
     max-height: 718px;
     position: relative;
+    margin-left: -20px;
+    width: calc(100% + 40px);
+    overflow: hidden;
 }
 
 .main-banner__container {
@@ -28,7 +37,7 @@
 .main-banner__title {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: clamp-px(32, 60);
+    font-size: clamp-px(22, 60);
     text-transform: uppercase;
     text-align: center;
     color: var(--accent-color);
@@ -44,21 +53,25 @@
     color: var(--1000-belyy);
     max-width: 1296px;
     margin-bottom: clamp-px(30, 60);
+    overflow-y: auto;
+    max-height: 123px;
 }
 
 .main-banner__btn {}
 
 .main-banner__subtitle-wrap {
-    padding: clamp-px(20, 40) 0;
-    width: 100%;
-    border-radius: 0 0 60px 60px;
+    padding: clamp-px(15, 40) 0;
+
+    border-radius: 0 0  clamp-px(20,60)  clamp-px(20,60);
     background: var(--accent-color);
+    margin-left: -20px;
+    width: calc(100% + 40px);
 }
 
 .main-banner__subtitle {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: clamp-px(32, 60);
+    font-size: clamp-px(22, 60);
     text-transform: uppercase;
     text-align: center;
     color: var(--black);

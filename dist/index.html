@@ -103,43 +103,94 @@
     <main>
         <section class='main-banner'>
 
-    <picture class='img-bg'>
-        <!-- avif -->
-        <source srcset='assets/images/banner/main-banner__bg.avif' type='image/avif' />
-        <!-- webp -->
-        <source srcset='assets/images/banner/main-banner__bg.webp' type='image/webp' />
-        <!-- jpeg -->
-        <source srcset='assets/images/banner/main-banner__bg-sm.jpeg' media='(max-width: 768px)' type='image/jpeg' />
-        <!-- png -->
-        <source srcset='assets/images/banner/main-banner__bg-sm.png' media='(max-width: 768px)' type='image/png' />
-        <!-- original -->
-        <img src='assets/images/banner/main-banner__bg.png' class='img-responsive' alt='' loading='lazy' />
-    </picture>
+    <div class="main-banner__top">
+        <picture class='img-bg'>
+            <!-- avif -->
+            <source srcset='assets/images/banner/main-banner__bg.avif' type='image/avif' />
+            <!-- webp -->
+            <source srcset='assets/images/banner/main-banner__bg.webp' type='image/webp' />
+            <!-- jpeg -->
+            <source srcset='assets/images/banner/main-banner__bg-sm.jpeg' media='(max-width: 768px)' type='image/jpeg' />
+            <!-- png -->
+            <source srcset='assets/images/banner/main-banner__bg-sm.png' media='(max-width: 768px)' type='image/png' />
+            <!-- original -->
+            <img src='assets/images/banner/main-banner__bg.png' class='img-responsive' alt='' loading='lazy' />
+        </picture>
 
-    <div class='container main-banner__container'>
+        <div class='container main-banner__container'>
 
-        <div class="main-banner__content-box">
-            <h1 class="main-banner__title">
-                ресторан "Paphos"
-            </h1>
+            <div class="main-banner__content-box">
+                <h1 class="main-banner__title">
+                    ресторан "Paphos"
+                </h1>
 
-            <div class="main-banner__text">
-                Изящный роскошно отделанный интерьер, дружелюбная атмосфера, внимательный обслуживающий персонал,
-                богатый выбор блюд и напитков, караоке-зал, просторный, головокружительный танцпол и сцена для фееричных
-                шоу – все это ресторан «PAPHOS»! У нас есть все, что бы каждый из Вас почувствовал себя желанным гостем!
+                <div class="main-banner__text">
+                    Изящный роскошно отделанный интерьер, дружелюбная атмосфера, внимательный обслуживающий персонал,
+                    богатый выбор блюд и напитков, караоке-зал, просторный, головокружительный танцпол и сцена для
+                    фееричных
+                    шоу – все это ресторан «PAPHOS»! У нас есть все, что бы каждый из Вас почувствовал себя желанным
+                    гостем!
+                </div>
+
+                <button class="btn main-banner__btn">
+                    МЕНю Ресторана
+                </button>
             </div>
 
-            <button class="btn main-banner__btn">
-                МЕНю Ресторана
-            </button>
         </div>
-
     </div>
+
+
 
     <div class="main-banner__subtitle-wrap">
         <div class="container">
             <div class="main-banner__subtitle">
                 АКЦИИ И СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
+            </div>
+        </div>
+    </div>
+</section>
+        <section class='primary-slider'>
+    <picture class='img-bg'>
+        <!-- avif -->
+        <source srcset='assets/images/slider/primary-slider-img.avif' type='image/avif' />
+        <!-- webp -->
+        <source srcset='assets/images/slider/primary-slider-img.webp' type='image/webp' />
+        <!-- jpeg -->
+        <source srcset='assets/images/slider/primary-slider-img-sm.jpeg' media='(max-width: 768px)' type='image/jpeg' />
+        <!-- png -->
+        <source srcset='assets/images/slider/primary-slider-img-sm.png' media='(max-width: 768px)' type='image/png' />
+        <!-- original -->
+        <img src='assets/images/slider/primary-slider-img.png' class='img-responsive' alt='' loading='lazy' />
+    </picture>
+    <div class='container primary-slider__container'>
+        <div class="slider-wrap">
+            <!-- Слайдер -->
+            <div class='swiper paphos__primary-slider'>
+                <!-- Обертка слайдера -->
+                <div class='swiper-wrapper'>
+                    <!-- Слайды -->
+                    <div class='swiper-slide'>
+                        <div class="primary-slide__card">
+                            <img src="assets/images/slider/primary-slide-img-1.png" alt="">
+                        </div>
+                    </div>
+                    <div class='swiper-slide'>
+                        <div class="primary-slide__card">
+                            <img src="assets/images/slider/primary-slide-img.png" alt="">
+                        </div>
+                    </div>
+                    <div class='swiper-slide'>
+                        <div class="primary-slide__card">
+                            <img src="assets/images/slider/primary-slide-img-2.png" alt="">
+                        </div>
+                    </div>
+                    <div class='swiper-slide'>
+                        <div class="primary-slide__card">
+                            <img src="assets/images/slider/primary-slide-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
