@@ -1,0 +1,81 @@
+.paphos-about {
+    margin-bottom: clamp-px(50, 100);
+}
+
+.paphos-about__container {
+    display: flex;
+    flex-direction: column;
+
+    & .two-col {
+        @include respond-to("nout") {
+            flex-direction: column;
+        }
+    }
+
+
+
+    & .title {
+        margin-bottom: clamp-px(40, 80);
+    }
+
+    & .left-col {
+        & p {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: clamp-px(16, 28);
+            line-height: 150%;
+            color: var(--black);
+
+            &:not(:last-child) {
+                margin-bottom: clamp-px(30, 60);
+
+            }
+        }
+
+        @include respond-to("nout") {
+            flex: 0 1 100%;
+            max-width: 100%;
+        }
+    }
+
+    & .right-col {
+        position: relative;
+
+        @include respond-to("nout") {
+            flex: 0 1 clamp-px(300, 620);
+            max-width: 100%;
+        }
+    }
+
+}
+
+.img-border-bg {
+    width: 94%;
+    height: 620px;
+    position: relative;
+    z-index: 2;
+
+    @include respond-to("nout") {
+        height: clamp-px(300, 620);
+        max-width: 100%;
+    }
+}
+
+.paphos-about__img-border-bg {}
+
+.border-bg {
+    width: 90%;
+    height: 620px;
+    background: var(--accent-color);
+    position: absolute;
+    right: 0;
+    top: 50px;
+
+    @include respond-to("nout") {
+        height: clamp-px(300, 620);
+        max-width: 100%;
+        top: clamp-px(20, 50);
+    }
+}
+
+.video-play-btn {}

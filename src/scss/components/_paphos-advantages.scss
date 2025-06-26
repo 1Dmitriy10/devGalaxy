@@ -1,0 +1,40 @@
+.paphos-advantages {
+    margin-bottom: clamp-px(50, 100);
+}
+
+.paphos-advantages__container {
+    display: flex;
+    flex-direction: column;
+
+    & .title-italic {
+        margin-bottom: -10px;
+
+        @include respond-to("nout") {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.paphos-advantages__card {
+    display: flex;
+    flex-direction: column;
+    gap: clamp-px(20, 30);
+    align-items: center;
+}
+
+.paphos-advantages__card-icon {
+    width: clamp-px(180, 223);
+    height: clamp-px(180, 223);
+    position: relative;
+    border-radius: 100%;
+}
+
+.paphos-advantages__card-title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(18, 28);
+    line-height: 150%;
+    text-align: center;
+    color: var(--black);
+    max-width: clamp-px(180, 223);
+}

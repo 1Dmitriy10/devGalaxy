@@ -1,0 +1,75 @@
+.paphos-events {
+    margin-bottom: clamp-px(120, 240);
+}
+
+.paphos-events__container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.paphos-events__container-bottom {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    & .slider-wrap {
+        position: absolute;
+        top: 52px;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.paphos-events__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(16, 20);
+    line-height: 140%;
+    color: var(--black);
+    max-width: 1195px;
+    margin-bottom: clamp-px(23, 30);
+    // &:not(:last-child) {
+    //     margin-bottom: clamp-px(23, 30);
+    // }
+}
+
+.strong {
+    font-weight: 600;
+}
+
+.paphos-events__bg-wrap {
+    background: url('../images/events/paphos-events-bg.png') 0 0/cover no-repeat;
+    min-height: 680px;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.paphos-events__slider {}
+
+.primary-pagination {}
+
+.slider-btn {}
+
+.slider-btn__prev {}
+
+.slider-btn__next {}
+
+.paphos-events__card {
+    min-height: 656px;
+    display: flex;
+}
+
+.paphos-events__card-left-col {
+    flex: 0 1 50%;
+    position: relative;
+    border-radius: clamp-px(16, 20) 0 0 clamp-px(16, 20);
+    overflow: hidden;
+}
+
+.paphos-events__card-right-col {
+    flex: 0 1 50%;
+    position: relative;
+    border-radius: 0 clamp-px(16, 20) clamp-px(16, 20) 0;
+    overflow: hidden;
+}

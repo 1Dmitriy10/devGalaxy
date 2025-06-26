@@ -1,5 +1,12 @@
-h1 {
-    @include font(var(--fwH1), var(--fsH1), var(--colorH1), 140%);
+h1 {}
+
+h2.title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: clamp-px(28, 60);
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: clamp-px(30, 40);
 }
 
 ::-webkit-input-placeholder {

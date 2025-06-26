@@ -1,10 +1,10 @@
 .primary-slider {
-    // aspect-ratio: 1/0.5
     min-height: clamp-px(250, 500);
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: clamp-px(50, 100);
 }
 
 .primary-slider__container {
