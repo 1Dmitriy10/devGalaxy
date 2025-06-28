@@ -132,7 +132,7 @@
                     гостем!
                 </div>
 
-                <button class="btn main-banner__btn">
+                <button class="btn main-banner__btn" data-fancybox data-src='#restaurant-menu'>
                     МЕНю Ресторана
                 </button>
             </div>
@@ -223,7 +223,20 @@
 
             </div>
 
-            <button class="video-play-btn"></button>
+            <button class="video-play-btn-wrap paphos-about__video-play-btn-wrap">
+                <span class="video-play-btn-text">
+                    Смотреть видео
+                </span>
+
+                <div class="video-play-btn">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M11.51 7.56167C11.3582 7.47165 11.1852 7.42342 11.0087 7.42188C10.8322 7.42034 10.6585 7.46554 10.5051 7.55289C10.3517 7.64025 10.2242 7.76664 10.1355 7.91923C10.0468 8.07181 10 8.24517 10 8.42167V31.5783C10 31.7548 10.0468 31.9282 10.1355 32.0808C10.2242 32.2334 10.3517 32.3598 10.5051 32.4471C10.6585 32.5345 10.8322 32.5797 11.0087 32.5781C11.1852 32.5766 11.3582 32.5283 11.51 32.4383L31.0483 20.86C31.1976 20.7715 31.3212 20.6456 31.407 20.4948C31.4929 20.344 31.538 20.1735 31.538 20C31.538 19.8265 31.4929 19.656 31.407 19.5052C31.3212 19.3544 31.1976 19.2285 31.0483 19.14L11.51 7.56167Z"
+                            fill="#2A2A2A" stroke="#2A2A2A" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </button>
         </div>
     </div>
 </section>
@@ -470,12 +483,298 @@
         </div>
     </div>
 </section>
+        <section class='paphos-form-wrap'>
+    <div class='container paphos-form__container'>
+
+        <div class="two-col">
+            <div class="left-col">
+                <div class="paphos-form__img">
+                    <picture class='img-bg'>
+                        <!-- avif -->
+                        <source srcset='assets/images/form/paphos-form-bg.avif' type='image/avif' />
+                        <!-- webp -->
+                        <source srcset='assets/images/form/paphos-form-bg.webp' type='image/webp' />
+                        <!-- jpeg -->
+                        <source srcset='assets/images/form/paphos-form-bg-sm.jpeg' media='(max-width: 768px)'
+                            type='image/jpeg' />
+                        <!-- png -->
+                        <source srcset='assets/images/form/paphos-form-bg-sm.png' media='(max-width: 768px)' type='image/png' />
+                        <!-- original -->
+                        <img src='assets/images/form/paphos-form-bg.png' class='img-responsive' alt='' loading='lazy' />
+                    </picture>
+                </div>
+            </div>
+
+            <div class="right-col">
+
+                <div class="paphos-form__title">
+                    Оставьте заявку на мероприятие и наш менеджер свяжется с вами в ближайшее время!
+                </div>
+
+                <form class="form paphos-form">
+
+                    <div class="form__row-two">
+
+                        <div class="form__row">
+                            <input type="text" name="name" placeholder="Имя*">
+                        </div>
+
+                        <div class="form__row">
+                            <input type="text" name="tel" placeholder="Телефон*">
+                        </div>
+
+                    </div>
+
+                    <div class="form__row paphos-form-email">
+                        <input type="email" name="email" placeholder="E-mail">
+                    </div>
+
+                    <div class="form__row-date-box">
+                        <input type="date" placeholder="Дата бронирования*">
+
+                        <input type="time" placeholder="Время">
+
+                        <input type="number" placeholder="Гости">
+                    </div>
+
+
+                    <div class="afree-box">
+
+                        <span>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с
+                            <a href="#">политикой конфиденциальности</a>
+                        </span>
+                    </div>
+
+                    <button class="btn-submit paphos-form__btn-submit" type="submit">
+                        Забронировать зал на мероприятие
+                    </button>
+
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+        <section class='interior'>
+    <div class='container interior__container'>
+        <h2 class="title">
+            Интерьер
+        </h2>
+
+        <div class="slider-btn__box paphos-interior__btn-box">
+
+            <div id="paphos-interior__slider-btn-prev" class="second-slider-btn slider-btn__prev">
+                <svg width="48" height="20" viewBox="0 0 48 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1.11612 9.25918C0.62796 9.74733 0.62796 10.5388 1.11612 11.0269L9.07107 18.9819C9.55922 19.4701 10.3507 19.4701 10.8388 18.9819C11.327 18.4937 11.327 17.7023 10.8388 17.2141L3.76777 10.1431L10.8388 3.072C11.327 2.58384 11.327 1.79238 10.8388 1.30423C10.3507 0.816073 9.55922 0.816073 9.07107 1.30423L1.11612 9.25918ZM48 8.89307L2 8.89306L2 11.3931L48 11.3931L48 8.89307Z"
+                        fill="#2A2A2A" />
+                </svg>
+            </div>
+
+            <div id="paphos-interior__slider-btn-next" class="second-slider-btn slider-btn__next">
+                <svg width="48" height="20" viewBox="0 0 48 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M46.8839 11.0269C47.372 10.5388 47.372 9.74734 46.8839 9.25918L38.9289 1.30423C38.4408 0.816076 37.6493 0.816076 37.1612 1.30423C36.673 1.79239 36.673 2.58384 37.1612 3.072L44.2322 10.1431L37.1612 17.2141C36.673 17.7023 36.673 18.4937 37.1612 18.9819C37.6493 19.4701 38.4408 19.4701 38.9289 18.9819L46.8839 11.0269ZM0 11.3931H46V8.89307H0V11.3931Z"
+                        fill="#2A2A2A" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="slider-wrap">
+            <!-- Слайдер -->
+            <div class='swiper paphos-interior__slider'>
+                <!-- Обертка слайдера -->
+                <div class='swiper-wrapper'>
+                    <!-- Слайды -->
+                    <div class='swiper-slide'>
+                        <div class="interior__card">
+                            <picture class='img-bg'>
+                                <!-- avif -->
+                                <source srcset='assets/images/interior/interior-img-1.avif' type='image/avif' />
+                                <!-- webp -->
+                                <source srcset='assets/images/interior/interior-img-1.webp' type='image/webp' />
+                                <!-- jpeg -->
+                                <source srcset='assets/images/interior/interior-img-1-sm.jpeg' media='(max-width: 768px)'
+                                    type='image/jpeg' />
+                                <!-- png -->
+                                <source srcset='assets/images/interior/interior-img-1-sm.png' media='(max-width: 768px)'
+                                    type='image/png' />
+                                <!-- original -->
+                                <img src='assets/images/interior/interior-img-1.png' class='img-responsive' alt=''
+                                    loading='lazy' />
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class='swiper-slide'>
+                        <div class="interior__card">
+                            <picture class='img-bg'>
+                                <!-- avif -->
+                                <source srcset='assets/images/interior/interior-img-1.avif' type='image/avif' />
+                                <!-- webp -->
+                                <source srcset='assets/images/interior/interior-img-1.webp' type='image/webp' />
+                                <!-- jpeg -->
+                                <source srcset='assets/images/interior/interior-img-1-sm.jpeg' media='(max-width: 768px)'
+                                    type='image/jpeg' />
+                                <!-- png -->
+                                <source srcset='assets/images/interior/interior-img-1-sm.png' media='(max-width: 768px)'
+                                    type='image/png' />
+                                <!-- original -->
+                                <img src='assets/images/interior/interior-img-1.png' class='img-responsive' alt=''
+                                    loading='lazy' />
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class='swiper-slide'>
+                        <div class="interior__card">
+                            <picture class='img-bg'>
+                                <!-- avif -->
+                                <source srcset='assets/images/interior/interior-img-1.avif' type='image/avif' />
+                                <!-- webp -->
+                                <source srcset='assets/images/interior/interior-img-1.webp' type='image/webp' />
+                                <!-- jpeg -->
+                                <source srcset='assets/images/interior/interior-img-1-sm.jpeg' media='(max-width: 768px)'
+                                    type='image/jpeg' />
+                                <!-- png -->
+                                <source srcset='assets/images/interior/interior-img-1-sm.png' media='(max-width: 768px)'
+                                    type='image/png' />
+                                <!-- original -->
+                                <img src='assets/images/interior/interior-img-1.png' class='img-responsive' alt=''
+                                    loading='lazy' />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Пагинация -->
+            <div id="paphos-interior__pagination" class='swiper-pagination primary-pagination'></div>
+        </div>
+    </div>
+</section>
+        <section class='contacts'>
+    <div class='container contacts__container'>
+
+        <div class="two-col">
+            <div class="left-col">
+                <h2 class="title">
+                    Контакты
+                </h2>
+
+                <div class="contacts__work-time-box">
+
+                    <div class="contacts__work-time-title">
+                        Часы работы РЦ "Галактика"
+                    </div>
+
+                    <div class="contacts__work-time-item">
+                        Понедельник - санитарный день с 17:00 до 01:00
+                    </div>
+
+                    <div class="contacts__work-time-item">
+                        Вторник - Четверг - с 12:30 до 01:00
+                    </div>
+
+                    <div class="contacts__work-time-item">
+                        Пятница - Суббота c 12:30 до 02:00
+                    </div>
+
+                    <div class="contacts__work-time-item">
+                        Воскресенье - с 12:30 до 01:00
+                    </div>
+
+                </div>
+
+                <div class="contacts__address-box">
+
+                    <div class="contacts__address-title">
+                        Адрес
+                    </div>
+
+                    <div class="contacts__address-item">
+                        Республика Казахстан, 090000, Западно-Казахстанская область, г.Уральск, проспект Абая 61\1
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="right-col">
+
+                <div class="map-wrap">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d624.7637152514012!2d51.38169531020614!3d51.21806502353368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4171ba5d74511c19%3A0xa160c52eb19b1879!2zMSwg0L_RgNC-0YHQv9C10LrRgiDQldCy0YDQsNC30LjRjyA2MSwg0KPRgNCw0LvRjNGB0LogMDkwMDAwLCDQmtCw0LfQsNGF0YHRgtCw0L0!5e0!3m2!1sru!2sru!4v1741817966870!5m2!1sru!2sru"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
 
     </main>
     <footer class='footer'>
     <!-- <div class='container footer__container'>
     </div> -->
 </footer>
+
+<div id="restaurant-menu" class="restaurant-menu">
+
+    <div class="restaurant-menu__title">
+        Меню ресторана «paphos»
+    </div>
+
+    <div class='restaurant-menu__card-box card-box-grid cols_2' data-col-gap='35' data-row-gap='35'>
+        <div class='card'>
+            <div class="restaurant-menu__card">
+                <div class="restaurant-menu__card-title-box">
+                    <div class="restaurant-menu__card-title">
+                        Основное меню
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='card'>
+            <div class="restaurant-menu__card">
+                <div class="restaurant-menu__card-title-box">
+                    <div class="restaurant-menu__card-title">
+                        Основное меню
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='card'>
+            <div class="restaurant-menu__card">
+                <div class="restaurant-menu__card-title-box">
+                    <div class="restaurant-menu__card-title">
+                        Основное меню
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='card'>
+            <div class="restaurant-menu__card">
+                <div class="restaurant-menu__card-title-box">
+                    <div class="restaurant-menu__card-title">
+                        Основное меню
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 </body>

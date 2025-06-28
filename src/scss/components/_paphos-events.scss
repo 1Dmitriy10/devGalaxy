@@ -50,6 +50,16 @@
 .primary-pagination {
     display: flex;
     gap: clamp-px(8, 15);
+
+    & .swiper-pagination-bullet {
+        background-color: #ececec;
+        opacity: 1;
+        margin: 0 !important;
+    }
+
+    & .swiper-pagination-bullet-active {
+        background-color: var(--accent-color);
+    }
 }
 
 #paphos-events__pagination {
@@ -94,8 +104,16 @@
 
 .slider-btn__prev {
     &>svg {
+        transition: 0.3s;
         position: relative;
         left: clamp-px(15, 30);
+    }
+
+    &:hover {
+        &>svg {
+            transition: 0.3s;
+            transform: translateX(-6%);
+        }
     }
 }
 
@@ -103,6 +121,14 @@
     &>svg {
         position: relative;
         right: clamp-px(15, 30);
+        transition: 0.3s;
+    }
+
+    &:hover {
+        &>svg {
+            transition: 0.3s;
+            transform: translateX(6%);
+        }
     }
 }
 

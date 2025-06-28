@@ -1,0 +1,199 @@
+.paphos-form-wrap {
+    margin-bottom: clamp(3.125rem, 2.155707196rem + 4.1356492969vw, 6.25rem);
+}
+
+.paphos-form__container {
+    display: flex;
+    flex-direction: column;
+
+    & .two-col {
+        position: relative;
+    }
+
+    & .left-col {
+        position: absolute;
+        left: 0;
+
+        @include respond-to("pc-old") {
+            display: none;
+        }
+    }
+
+    & .right-col {
+        max-width: 832px;
+        margin-left: auto;
+        position: relative;
+        z-index: 2;
+
+        @include respond-to("pc-old") {
+            margin-right: auto;
+        }
+
+        // flex: 1 1 50%;
+    }
+}
+
+.paphos-form__img {
+    width: clamp-px(200, 508);
+    height: clamp-px(200, 508);
+    position: relative;
+}
+
+.paphos-form__title {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(18, 36);
+    text-align: center;
+    color: var(--black);
+    margin-bottom: clamp-px(20, 50);
+}
+
+.paphos-form {
+    display: flex;
+    flex-direction: column;
+
+    & .form__row-two {
+        margin-bottom: clamp-px(20, 50);
+    }
+
+    & .afree-box {
+        max-width: 660px;
+        margin-bottom: clamp-px(20, 50);
+    }
+}
+
+.paphos-form-email {
+    margin-bottom: clamp-px(20, 50);
+}
+
+.form__row-two {
+    display: flex;
+    gap: 32px;
+
+    &>.form__row {
+        flex: 0 1 calc((100% - 32px * 1) /2);
+    }
+
+    @include respond-to("tel") {
+        flex-direction: column;
+        gap: 20px;
+
+        &>.form__row {
+            flex: 0 1 100%;
+        }
+
+    }
+}
+
+.form__row {
+    &>input {
+        width: 100%;
+        border: 1.50px solid var(--accent-color);
+        padding: clamp-px(12, 19) clamp-px(18, 27);
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: clamp-px(14, 17);
+        line-height: 150%;
+        color: var(--menyu-pafos-cvet-seryy);
+        opacity: 0.45;
+    }
+}
+
+.form__row-date-box {
+    display: flex;
+    gap: 32px;
+    // flex-wrap: wrap;
+    margin-bottom: clamp-px(20, 25);
+
+    &>input {
+        border: 1.50px solid var(--accent-color);
+        padding: clamp-px(12, 19) clamp-px(18, 27);
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: clamp-px(14, 17);
+        line-height: 150%;
+        color: var(--menyu-pafos-cvet-seryy);
+        opacity: 0.45;
+
+        &:first-child {
+            flex: 0 1 48%;
+        }
+
+        &:nth-child(2) {
+            flex: 0 1 22%;
+        }
+
+        &:last-child {
+            flex: 0 1 22%;
+            max-width: 184px;
+        }
+    }
+
+    @include respond-to("tel") {
+        flex-direction: column;
+        gap: 20px;
+
+        &>input {
+            border: 1.50px solid var(--accent-color);
+            padding: clamp-px(12, 19) clamp-px(18, 27);
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: clamp-px(14, 17);
+            line-height: 150%;
+            color: var(--menyu-pafos-cvet-seryy);
+            opacity: 0.45;
+
+            &:first-child {
+                flex: 0 1 100%;
+            }
+
+            &:nth-child(2) {
+                flex: 0 1 100%;
+            }
+
+            &:last-child {
+                flex: 0 1 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.afree-box {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: clamp-px(12, 17);
+    line-height: 150%;
+    color: var(--black);
+
+    & a {
+        text-decoration: underline;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: clamp-px(12, 17);
+        line-height: 150%;
+        color: var(--black);
+    }
+}
+
+.paphos-form__btn-submit {
+    width: 100%;
+    border: 1px solid var(--accent-color);
+    border-radius: 10px;
+    padding: clamp-px(12, 23) clamp-px(15, 20);
+    background: #133751;
+    border: 1px solid #133751;
+
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: clamp-px(14, 32);
+    text-transform: uppercase;
+    color: var(--1000-belyy);
+    transition: 0.3s;
+
+    &:hover {
+        transition: 0.3s;
+        background-color: transparent;
+        color: #133751;
+    }
+}

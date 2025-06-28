@@ -1,0 +1,74 @@
+<section class='paphos-form-wrap'>
+    <div class='container paphos-form__container'>
+
+        <div class="two-col">
+            <div class="left-col">
+                <div class="paphos-form__img">
+                    <picture class='img-bg'>
+                        <!-- avif -->
+                        <source srcset='@img/form/paphos-form-bg.avif' type='image/avif' />
+                        <!-- webp -->
+                        <source srcset='@img/form/paphos-form-bg.webp' type='image/webp' />
+                        <!-- jpeg -->
+                        <source srcset='@img/form/paphos-form-bg-sm.jpeg' media='(max-width: 768px)'
+                            type='image/jpeg' />
+                        <!-- png -->
+                        <source srcset='@img/form/paphos-form-bg-sm.png' media='(max-width: 768px)' type='image/png' />
+                        <!-- original -->
+                        <img src='@img/form/paphos-form-bg.png' class='img-responsive' alt='' loading='lazy' />
+                    </picture>
+                </div>
+            </div>
+
+            <div class="right-col">
+
+                <div class="paphos-form__title">
+                    Оставьте заявку на мероприятие и наш менеджер свяжется с вами в ближайшее время!
+                </div>
+
+                <form class="form paphos-form">
+
+                    <div class="form__row-two">
+
+                        <div class="form__row">
+                            <input type="text" name="name" placeholder="Имя*">
+                        </div>
+
+                        <div class="form__row">
+                            <input type="text" name="tel" placeholder="Телефон*">
+                        </div>
+
+                    </div>
+
+                    <div class="form__row paphos-form-email">
+                        <input type="email" name="email" placeholder="E-mail">
+                    </div>
+
+                    <div class="form__row-date-box">
+                        <input type="date" placeholder="Дата бронирования*">
+
+                        <input type="time" placeholder="Время">
+
+                        <input type="number" placeholder="Гости">
+                    </div>
+
+
+                    <div class="afree-box">
+
+                        <span>Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с
+                            <a href="#">политикой конфиденциальности</a>
+                        </span>
+                    </div>
+
+                    <button class="btn-submit paphos-form__btn-submit" type="submit">
+                        Забронировать зал на мероприятие
+                    </button>
+
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</section>
