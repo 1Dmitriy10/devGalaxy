@@ -1577,7 +1577,7 @@ main.ui-kit {
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%;
-  max-width: 190px;
+  max-width: 193px;
   border-radius: clamp(1rem, 0.7285980149rem + 1.1579818031vw, 1.875rem);
   padding: clamp(0.75rem, 0.6918424318rem + 0.2481389578vw, 0.9375rem) clamp(0.9375rem, 0.8211848635rem + 0.4962779156vw, 1.3125rem);
   background: var(--accent-color);
@@ -2021,9 +2021,9 @@ body {
 }
 
 .primary-slide__card {
-  height: 150px;
+  height: 155px;
   border: 1px solid var(--1000-belyy);
-  border-radius: clamp(1.25rem, 1.0561414392rem + 0.8271298594vw, 1.875rem);
+  border-radius: clamp(0.625rem, 0.5474565757rem + 0.3308519438vw, 0.875rem);
   position: relative;
   overflow: hidden;
 }
@@ -2033,7 +2033,7 @@ body {
   }
 }
 .primary-slide__card > img {
-  border-radius: clamp(1.25rem, 1.0561414392rem + 0.8271298594vw, 1.875rem);
+  border-radius: clamp(0.625rem, 0.5474565757rem + 0.3308519438vw, 0.875rem);
   position: absolute;
   top: 0;
   left: 0;
@@ -2093,7 +2093,7 @@ body {
 }
 
 .paphos-about {
-  margin-bottom: clamp(3.125rem, 2.155707196rem + 4.1356492969vw, 6.25rem);
+  margin-bottom: clamp(3.125rem, 0.5660669975rem + 10.9181141439vw, 11.375rem);
 }
 
 .paphos-about__container {
@@ -2127,7 +2127,7 @@ body {
   color: var(--black);
 }
 .paphos-about__container .left-col p:not(:last-child) {
-  margin-bottom: clamp(1.875rem, 1.2934243176rem + 2.4813895782vw, 3.75rem);
+  margin-bottom: clamp(1.875rem, 0.905707196rem + 4.1356492969vw, 5rem);
 }
 @media (max-width: 991.98px) {
   .paphos-about__container .left-col {
@@ -2180,7 +2180,7 @@ body {
 
 .paphos-about__video-play-btn-wrap {
   position: absolute;
-  top: 50%;
+  top: 62%;
   left: 41%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -2195,7 +2195,7 @@ body {
 }
 
 .paphos-advantages {
-  margin-bottom: clamp(3.125rem, 2.155707196rem + 4.1356492969vw, 6.25rem);
+  margin-bottom: clamp(3.125rem, 1.7679900744rem + 5.7899090157vw, 7.5rem);
 }
 
 .paphos-advantages__container {
@@ -2248,7 +2248,7 @@ body {
 }
 
 .paphos-events {
-  margin-bottom: clamp(7.5rem, 5.1736972705rem + 9.9255583127vw, 15rem);
+  margin-bottom: clamp(7.5rem, 4.6890508685rem + 11.9933829611vw, 16.5625rem);
 }
 
 .paphos-events__container {
@@ -2273,7 +2273,7 @@ body {
 }
 .paphos-events__container-bottom .slider-wrap {
   position: absolute;
-  top: 52px;
+  top: 88px;
   left: 0;
   width: 100%;
 }
@@ -2424,8 +2424,8 @@ body {
 
 .paphos-events__card-left-col {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 50%;
-  flex: 0 1 50%;
+  -ms-flex: 0 1 51%;
+  flex: 0 1 51%;
   position: relative;
   border-radius: clamp(1rem, 0.9224565757rem + 0.3308519438vw, 1.25rem) 0 0 clamp(1rem, 0.9224565757rem + 0.3308519438vw, 1.25rem);
   overflow: hidden;
@@ -2513,7 +2513,7 @@ body {
 }
 
 .paphos-form-wrap {
-  margin-bottom: clamp(3.125rem, 2.155707196rem + 4.1356492969vw, 6.25rem);
+  margin-bottom: clamp(3.125rem, 1.8649193548rem + 5.376344086vw, 7.1875rem);
 }
 
 .paphos-form__container {
@@ -2744,7 +2744,12 @@ body {
   flex-direction: column;
 }
 .interior__container .title {
-  margin-bottom: 10px;
+  margin-bottom: -12px;
+}
+@media (max-width: 767.98px) {
+  .interior__container .title {
+    margin-bottom: 10px;
+  }
 }
 .interior__container .slider-wrap {
   position: relative;
@@ -2799,6 +2804,11 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+.contacts__container .two-col {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 @media (max-width: 991.98px) {
   .contacts__container .two-col {
     -webkit-box-orient: vertical;
@@ -2831,6 +2841,14 @@ body {
   height: 1px;
   background-color: var(--1000-belyy);
   margin-top: clamp(1.25rem, 0.8622828784rem + 1.6542597188vw, 2.5rem);
+}
+.contacts__container .right-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 @media (max-width: 991.98px) {
   .contacts__container .right-col {

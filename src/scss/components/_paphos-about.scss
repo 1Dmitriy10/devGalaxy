@@ -1,5 +1,5 @@
 .paphos-about {
-    margin-bottom: clamp-px(50, 100);
+    margin-bottom: clamp-px(50, 182);
 }
 
 .paphos-about__container {
@@ -29,7 +29,7 @@
             color: var(--black);
 
             &:not(:last-child) {
-                margin-bottom: clamp-px(30, 60);
+                margin-bottom: clamp-px(30, 80);
 
             }
         }
@@ -82,7 +82,7 @@
 
 .paphos-about__video-play-btn-wrap {
     position: absolute;
-    top: 50%;
+    top: 62%;
     left: 41%;
     transform: translate(-50%, -50%);
     z-index: 2;

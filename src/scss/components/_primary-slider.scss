@@ -17,9 +17,9 @@
 }
 
 .primary-slide__card {
-    height: 150px;
+    height: 155px;
     border: 1px solid var(--1000-belyy);
-    border-radius: clamp-px(20, 30);
+    border-radius: clamp-px(10, 14);
     position: relative;
     overflow: hidden;
 
@@ -28,7 +28,7 @@
     }
 
     &>img {
-        border-radius: clamp-px(20, 30);
+        border-radius: clamp-px(10, 14);
         position: absolute;
         top: 0;
         left: 0;

@@ -1,5 +1,5 @@
 .paphos-events {
-    margin-bottom: clamp-px(120, 240);
+    margin-bottom: clamp-px(120, 265);
 }
 
 .paphos-events__container {
@@ -15,7 +15,7 @@
 
     & .slider-wrap {
         position: absolute;
-        top: 52px;
+        top: 88px;
         left: 0;
         width: 100%;
     }
@@ -153,7 +153,7 @@
 }
 
 .paphos-events__card-left-col {
-    flex: 0 1 50%;
+    flex: 0 1 51%;
     position: relative;
     border-radius: clamp-px(16, 20) 0 0 clamp-px(16, 20);
     overflow: hidden;
