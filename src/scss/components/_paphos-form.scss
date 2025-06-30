@@ -37,6 +37,19 @@
     width: clamp-px(200, 508);
     height: clamp-px(200, 508);
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.paphos-form__img-text {}
+
+.paphos-form__img-bg {
+    width: 89%;
+    height: 89%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .paphos-form__title {
@@ -94,7 +107,8 @@
         font-weight: 400;
         font-size: clamp-px(14, 17);
         line-height: 150%;
-        color: var(--menyu-pafos-cvet-seryy);
+        // color: var(--menyu-pafos-cvet-seryy);
+        color: 000;
         opacity: 0.45;
     }
 }

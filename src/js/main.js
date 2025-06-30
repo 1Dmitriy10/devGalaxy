@@ -94,6 +94,9 @@ import { mask } from "./libs/mask.js";
 //------------Звездный рейтинг---------------
 // import { starRating } from "./components/starRating.js";
 
+//------------Вращение надписи изображения формы---------------
+import { rotateTextFormImg } from "./components/rotateTextFormImg.js";
+
 
 
 

@@ -2194,6 +2194,10 @@ body {
   }
 }
 
+.hidden-video {
+  display: none;
+}
+
 .paphos-advantages {
   margin-bottom: clamp(3.125rem, 1.7679900744rem + 5.7899090157vw, 7.5rem);
 }
@@ -2553,6 +2557,25 @@ body {
   width: clamp(12.5rem, 6.5291563275rem + 25.4755996691vw, 31.75rem);
   height: clamp(12.5rem, 6.5291563275rem + 25.4755996691vw, 31.75rem);
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.paphos-form__img-bg {
+  width: 89%;
+  height: 89%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .paphos-form__title {
@@ -2619,7 +2642,7 @@ body {
   font-weight: 400;
   font-size: clamp(0.875rem, 0.8168424318rem + 0.2481389578vw, 1.0625rem);
   line-height: 150%;
-  color: var(--menyu-pafos-cvet-seryy);
+  color: 0;
   opacity: 0.45;
 }
 

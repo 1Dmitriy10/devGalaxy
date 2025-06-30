@@ -14076,6 +14076,33 @@ function inputmask() {
 }
 inputmask()
 
+/***/ }),
+/* 62 */
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   rotateTextFormImg: () => (/* binding */ rotateTextFormImg)
+/* harmony export */ });
+function rotateTextFormImg() {
+   
+    let imgText = document.querySelector("#paphos-form__img-text");
+    let deg = 0;
+
+ 
+    let anim = setInterval(function(){
+        imgText.style.cssText=`transform: rotate(${deg}deg);`
+        deg = deg + 0.1;
+
+        if(Math.ceil(deg) == 360) {
+            // clearInterval(anim);
+            deg = 0
+        }
+    },50)
+
+};
+rotateTextFormImg()
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -14191,6 +14218,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _libs_slider_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(10);
 /* harmony import */ var _libs_fancybox_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(56);
 /* harmony import */ var _libs_mask_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(60);
+/* harmony import */ var _components_rotateTextFormImg_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(62);
 //------------------------Спойлеры-----------------------
 
 
@@ -14286,6 +14314,9 @@ __webpack_require__.r(__webpack_exports__);
 
 //------------Звездный рейтинг---------------
 // import { starRating } from "./components/starRating.js";
+
+//------------Вращение надписи изображения формы---------------
+
 
 
 
