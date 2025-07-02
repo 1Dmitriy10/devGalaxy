@@ -7,11 +7,16 @@
     width: 100%;
     aspect-ratio: 1/0.47;
     min-height: 280px;
-    max-height: 718px;
+    // max-height: 718px;
     position: relative;
     margin-left: -20px;
     width: calc(100% + 40px);
-    overflow: hidden;
+    // overflow: hidden;
+
+    @include respond-to("tab") {
+        max-height: fit-content;
+        aspect-ratio: auto;
+    }
 }
 
 .main-banner__container {
@@ -32,6 +37,9 @@
     border-radius: clamp-px(16, 35);
     padding: clamp-px(20, 40) clamp-px(15, 20);
 
+    @include respond-to("tab") {}
+
+    margin: 20px;
 }
 
 .main-banner__title {
@@ -53,8 +61,8 @@
     color: var(--1000-belyy);
     max-width: 1296px;
     margin-bottom: clamp-px(30, 60);
-    overflow-y: auto;
-    max-height: 123px;
+    // overflow-y: auto;
+    // max-height: 123px;
 }
 
 .main-banner__btn {

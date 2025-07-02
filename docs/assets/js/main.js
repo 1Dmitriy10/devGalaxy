@@ -1493,9 +1493,9 @@ const paphosEventsSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["defau
       centeredSlides: true,
 
     /*Отступ у карточек*/
-    spaceBetween: 20,
+    spaceBetween: 10,
     /*Показывать по n карточек*/
-    slidesPerView: 1,
+    slidesPerView: 1.2,
     /* При достижении конца, перепрыгнуть в начало */
     // rewind: true,
     /*Увеличение при наведении курсора мыши */
@@ -1518,24 +1518,24 @@ const paphosEventsSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["defau
     //   },
     //   speed: 700,
     /*Брек-поинты*/
-    // breakpoints: {
-    //     1220: {
-    //         slidesPerView: 3,
-    //         spaceBetween: 240,
-    //     },
-    //     992: {
-    //         slidesPerView: 3,
-    //         spaceBetween: 140,
-    //     },
-    //     768: {
-    //         slidesPerView: 2,
-    //         spaceBetween: 100,
-    //     },
-    //     568: {
-    //         slidesPerView: 2,
-    //         spaceBetween: 20,
-    //     }
-    // },
+    breakpoints: {
+        // 1220: {
+        //     slidesPerView: 3,
+        //     spaceBetween: 240,
+        // },
+        // 992: {
+        //     slidesPerView: 3,
+        //     spaceBetween: 140,
+        // },
+        // 768: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 100,
+        // },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        }
+    },
 
 });
 

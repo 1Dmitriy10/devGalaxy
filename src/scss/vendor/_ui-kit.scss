@@ -239,6 +239,10 @@ main.ui-kit {
         color: black;
         margin: 64px 101px;
     }
+
+    & .f-button {
+        display: none !important;
+    }
 }
 
 .restaurant-menu-wrap {
@@ -246,7 +250,25 @@ main.ui-kit {
     flex-direction: column;
     gap: clamp-px(20, 35);
     background: rgba(252, 245, 229, 0.75);
-    padding: clamp-px(20, 80) clamp-px(50, 120);
+    padding: 64px clamp-px(50, 120) clamp-px(20, 80) clamp-px(50, 120);
+
+    & .restaurant-menu-close {
+
+        background-color: transparent;
+        margin-left: auto;
+
+        &>svg {
+            width: clamp-px(20, 25);
+            height: clamp-px(20, 25);
+        }
+    }
+
+}
+
+.restaurant-menu__title-box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .restaurant-menu__title {
