@@ -1792,6 +1792,11 @@ main.ui-kit {
 .restaurant-menu .f-button {
   display: none !important;
 }
+@media (max-width: 575.98px) {
+  .restaurant-menu {
+    height: 100dvh;
+  }
+}
 
 .restaurant-menu-wrap {
   display: -webkit-box;
@@ -1812,6 +1817,11 @@ main.ui-kit {
 .restaurant-menu-wrap .restaurant-menu-close > svg {
   width: clamp(1.25rem, 1.1530707196rem + 0.4135649297vw, 1.5625rem);
   height: clamp(1.25rem, 1.1530707196rem + 0.4135649297vw, 1.5625rem);
+}
+@media (max-width: 575.98px) {
+  .restaurant-menu-wrap {
+    height: 100%;
+  }
 }
 
 .restaurant-menu__title-box {
@@ -1838,6 +1848,7 @@ main.ui-kit {
   display: flex;
   position: relative;
   height: clamp(6.25rem, 1.3066066998rem + 21.0918114144vw, 22.1875rem);
+  border: 2px solid var(--1000-belyy);
 }
 
 .restaurant-menu__card-title-box {
@@ -2277,7 +2288,22 @@ body {
 }
 
 .paphos-events {
-  margin-bottom: clamp(7.5rem, 4.6890508685rem + 11.9933829611vw, 16.5625rem);
+  margin-bottom: clamp(3.125rem, -1.0429590571rem + 17.7832919768vw, 16.5625rem);
+}
+@media (max-width: 1399.98px) {
+  .paphos-events {
+    margin-bottom: clamp(3.125rem, -3.6600496278rem + 28.9495450786vw, 25rem);
+  }
+}
+@media (max-width: 991.98px) {
+  .paphos-events {
+    margin-bottom: clamp(3.125rem, -3.6600496278rem + 28.9495450786vw, 25rem);
+  }
+}
+@media (max-width: 575.98px) {
+  .paphos-events {
+    margin-bottom: clamp(8.125rem, 2.8908188586rem + 22.3325062035vw, 25rem);
+  }
 }
 
 .paphos-events__container {
@@ -2301,9 +2327,14 @@ body {
 }
 .paphos-events__container-bottom .slider-wrap {
   position: absolute;
-  top: 88px;
+  top: clamp(2.5625rem, 1.6513647643rem + 3.8875103391vw, 5.5rem);
   left: 0;
   width: 100%;
+}
+@media (max-width: 767.98px) {
+  .paphos-events__container-bottom .slider-wrap {
+    top: clamp(1.875rem, 0.4598325062rem + 6.0380479735vw, 6.4375rem);
+  }
 }
 
 .paphos-events__text {
@@ -2328,7 +2359,7 @@ body {
 }
 @media (max-width: 767.98px) {
   .paphos-events__bg-wrap {
-    min-height: 440px;
+    min-height: clamp(21.25rem, 18.5359801489rem + 11.5798180314vw, 30rem);
   }
 }
 
@@ -2688,8 +2719,7 @@ body {
   font-weight: 400;
   font-size: clamp(0.875rem, 0.8168424318rem + 0.2481389578vw, 1.0625rem);
   line-height: 150%;
-  color: 0;
-  opacity: 0.45;
+  color: var(--black);
 }
 
 .form__row-date-box {
@@ -2800,7 +2830,7 @@ body {
 }
 
 .interior {
-  margin-bottom: clamp(5rem, 3.3715880893rem + 6.9478908189vw, 10.25rem);
+  margin-bottom: clamp(3.125rem, 0.9150124069rem + 9.429280397vw, 10.25rem);
 }
 
 .interior__container {

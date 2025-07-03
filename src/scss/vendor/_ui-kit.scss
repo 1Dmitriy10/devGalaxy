@@ -243,6 +243,10 @@ main.ui-kit {
     & .f-button {
         display: none !important;
     }
+
+    @include respond-to("tel") {
+        height: 100dvh;
+    }
 }
 
 .restaurant-menu-wrap {
@@ -261,6 +265,10 @@ main.ui-kit {
             width: clamp-px(20, 25);
             height: clamp-px(20, 25);
         }
+    }
+
+    @include respond-to("tel") {
+        height: 100%;
     }
 
 }
@@ -283,6 +291,7 @@ main.ui-kit {
     display: flex;
     position: relative;
     height: clamp-px(100, 355);
+    border: 2px solid var(--1000-belyy);
 }
 
 .restaurant-menu__card-title-box {

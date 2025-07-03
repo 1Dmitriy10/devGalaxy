@@ -1,6 +1,17 @@
 .paphos-events {
-    margin-bottom: clamp-px(120, 265);
+    margin-bottom: clamp-px(50, 265);
 
+    @include respond-to("pc") {
+        margin-bottom: clamp-px(50, 400);
+    }
+
+    @include respond-to("nout") {
+        margin-bottom: clamp-px(50, 400);
+    }
+
+    @include respond-to("tel") {
+        margin-bottom: clamp-px(130, 400);
+    }
 
 }
 
@@ -20,13 +31,13 @@
 
     & .slider-wrap {
         position: absolute;
-        top: 88px;
+        top: clamp-px(41, 88);
         left: 0;
         width: 100%;
 
-        // @include respond-to("tab") {
-        //     position: static;
-        // }
+        @include respond-to("tab") {
+            top: clamp-px(30, 103);
+        }
     }
 }
 
@@ -54,8 +65,9 @@
     margin-right: -20px;
 
     @include respond-to("tab") {
-        min-height: 440px;
+        min-height: clamp-px(340, 480);
     }
+
 }
 
 .paphos-events__slider {
