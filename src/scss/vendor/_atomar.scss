@@ -130,3 +130,11 @@
 .yellow {
     color: #fb7;
 }
+
+.fs_65 {
+    font-size: clamp-px(26, 65) !important;
+}
+
+.fs_24 {
+    font-size: clamp-px(12, 24) !important;
+}

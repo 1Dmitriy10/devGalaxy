@@ -95,4 +95,14 @@
 
 .hidden-video {
     display: none;
+    width: 100%;
+    max-width: 1200px;
+    height: clamp-px(420, 720);
+    max-height: clamp-px(420, 720);
+
+    &>iframe {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
 }

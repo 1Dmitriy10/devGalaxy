@@ -97,6 +97,11 @@ import { mask } from "./libs/mask.js";
 //------------Вращение надписи изображения формы---------------
 import { rotateTextFormImg } from "./components/rotateTextFormImg.js";
 
+//------------Скрытые поля формы ресторана пафос---------------
+import { paphosFormHidden } from "./components/paphosFormHidden.js";
+
+
+
 
 
 
