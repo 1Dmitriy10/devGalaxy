@@ -138,3 +138,39 @@
 .fs_24 {
     font-size: clamp-px(12, 24) !important;
 }
+
+.fs_34 {
+    font-size: clamp-px(18, 34) !important;
+}
+
+.bg_brown {
+    background-color: #d2904f;
+}
+
+.border_brown {
+    border: 1px solid #d2904f;
+}
+
+.border_red {
+    border: 1px solid #ff1a1a;
+}
+
+.bg_red {
+    background-color: #ff1a1a;
+}
+
+.dark {
+    background-color: var(--black) !important;
+}
+
+.tc_white {
+    color: var(--1000-belyy) !important;
+}
+
+.bg_black {
+    background-color: #0a0a10;
+}
+
+.mb_68 {
+    margin-bottom: clamp-px(30, 68);
+}

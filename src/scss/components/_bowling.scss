@@ -1,0 +1,86 @@
+.bowling {
+    position: relative;
+    height: 919px;
+    display: flex;
+    align-items: center;
+    margin-bottom: clamp-px(120, 50);
+}
+
+.bowling__container {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: clamp-px(20, 40);
+    padding: clamp-px(30, 60) 10px;
+
+    & p {
+        text-align: center;
+        line-height: 150%;
+    }
+}
+
+.video-play-btn.darck {
+    background-color: var(--black);
+}
+
+
+.bowling__container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & .main-banner__btn {
+        align-self: center;
+        width: auto;
+        margin-bottom: clamp-px(20, 40);
+    }
+}
+
+.bowling__btn-box {
+    display: flex;
+    // flex-wrap: wrap;
+    // width: fit-content;
+    max-width: 100%;
+    gap: clamp-px(20, 60);
+    margin-bottom: clamp-px(30, 40);
+    // --row-gap: 20px;
+    // --col-gap: 40px;
+
+    // &>.card {
+    //     flex: 0 1 auto;
+
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+}
+
+.bowling__btn {
+    background: #0c509a;
+    border-radius: 5px;
+    padding: 20px 30px;
+    color: var(--1000-belyy);
+    width: fit-content;
+    max-width: fit-content;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.bowling__card-title {
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 36px;
+    color: var(--1000-belyy);
+    text-align: center;
+}
+
+.main-banner__btn {}
+
+.bg_brown {}
+
+.border_brown {}
+
+.booking {}
+
+.strong {}
