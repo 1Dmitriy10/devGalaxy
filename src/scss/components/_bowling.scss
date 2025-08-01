@@ -7,15 +7,17 @@
 }
 
 .bowling__container {
+    width: 100%;
     position: relative;
     z-index: 2;
     background: rgba(0, 0, 0, 0.6);
     border-radius: clamp-px(20, 40);
-    padding: clamp-px(30, 60) 10px;
+    padding: clamp-px(30, 65) 10px;
 
     & p {
         text-align: center;
         line-height: 150%;
+        font-size: clamp-px(16, 20);
     }
 }
 
@@ -75,12 +77,6 @@
     text-align: center;
 }
 
-.main-banner__btn {}
-
-.bg_brown {}
-
-.border_brown {}
-
-.booking {}
-
-.strong {}
+.bowling__title {
+    margin-bottom: 16px !important;
+}

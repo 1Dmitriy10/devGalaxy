@@ -97,11 +97,22 @@
 
 .main-banner__btn-box {
     display: flex;
+
     gap: clamp-px(20, 60);
+
+    @include respond-to("tel") {
+        flex-wrap: wrap;
+    }
 }
 
 .btn.booking {
     display: flex;
     gap: clamp-px(15, 20);
+    max-width: 100%;
+}
+
+.main-banner__btn-bowling {
+    font-size: clamp-px(14, 17);
+    padding: 14px 20px;
     max-width: 100%;
 }

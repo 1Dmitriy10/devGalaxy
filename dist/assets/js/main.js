@@ -1607,6 +1607,54 @@ const paphosInteriorSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["def
 
 });
 
+const foodsSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.foods-swiper', {
+ slidesPerView: 1,
+    spaceBetween: 130,
+    loop: true,
+    navigation: {
+      nextEl: '.btn-next',
+      prevEl: '.btn-prev',
+    },
+    autoplay: {
+      delay: 3000, 
+      disableOnInteraction: false, 
+    },
+    breakpoints: {
+      576: {
+        slidesPerView: 1,
+      },
+      870: {
+        slidesPerView: 2,
+      },
+      1200: {
+        slidesPerView: 3,
+      },
+    },
+
+});
+
+const bowlingGallerySlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.bowling-gallery-swiper', {
+  slidesPerView: 1,
+    spaceBetween: 60,
+    loop: true,
+    autoplay: {
+      delay: 3000, 
+      disableOnInteraction: false, 
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+      },
+      870: {
+        slidesPerView: 3,
+      },
+      1200: {
+        slidesPerView: 4,
+      },
+    },
+
+});
+
 
 
 

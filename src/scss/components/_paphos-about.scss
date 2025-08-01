@@ -51,6 +51,20 @@
 
 }
 
+.bowling-about__container {
+    & .left-col {
+        & p {
+
+            &:not(:last-child) {
+                margin-bottom: clamp-px(30, 123);
+
+            }
+        }
+
+    }
+
+}
+
 .img-border-bg {
     width: 94%;
     height: 620px;

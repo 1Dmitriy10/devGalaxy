@@ -163,8 +163,8 @@
     background-color: var(--black) !important;
 }
 
-.tc_white {
-    color: var(--1000-belyy) !important;
+.tc_white-100 {
+    color: var(--accent-color) !important;
 }
 
 .bg_black {
@@ -173,4 +173,8 @@
 
 .mb_68 {
     margin-bottom: clamp-px(30, 68);
+}
+
+.mb_51 {
+    margin-bottom: clamp-px(30, 51);
 }
