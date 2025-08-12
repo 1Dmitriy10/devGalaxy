@@ -16,6 +16,13 @@ body {
     font-family: var(--font-family)
 }
 
+.bowling-gallery-swiper {
+    &>.swiper-wrapper {
+        transition-timing-function: linear !important;
+        /* Равномерная скорость */
+    }
+}
+
 //==================================
 
 

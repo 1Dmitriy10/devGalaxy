@@ -211,8 +211,10 @@ const bowlingGallerySlider = new Swiper('.bowling-gallery-swiper', {
   slidesPerView: 1,
     spaceBetween: 60,
     loop: true,
+    speed: 8000,
+   
     autoplay: {
-      delay: 3000, 
+      delay: 0, 
       disableOnInteraction: false, 
     },
     breakpoints: {
