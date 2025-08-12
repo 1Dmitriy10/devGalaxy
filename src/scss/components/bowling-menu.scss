@@ -235,7 +235,7 @@
     width: 100%;
     padding-left: 100px;
     padding-right: 100px;
-    margin-top: 200px;
+    margin-top: clamp-px(50, 120);
 }
 
 .comfortability-block h2 {
@@ -682,11 +682,13 @@
 }
 
 .bowling-menu {
-    margin-bottom: clamp-px(50, 260);
+    margin-bottom: clamp-px(50, 120);
 }
 
 .our-equipment {
-    margin-bottom: clamp-px(50, 260);
+    padding-top: clamp-px(50, 150) !important;
+    padding-bottom: clamp-px(50, 150) !important;
+    background-color: #030306;
 }
 
 .our-equipment__container {
@@ -737,6 +739,9 @@
 .equipment-content-container {
     padding: clamp-px(30, 98) clamp-px(30, 100);
     justify-content: flex-start;
+    background-color: #0a0a10;
+
+
 }
 
 .equipment-description {

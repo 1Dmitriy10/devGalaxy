@@ -3497,7 +3497,7 @@ body {
   width: 100%;
   padding-left: 100px;
   padding-right: 100px;
-  margin-top: 200px;
+  margin-top: clamp(3.125rem, 1.7679900744rem + 5.7899090157vw, 7.5rem);
 }
 
 .comfortability-block h2 {
@@ -3931,11 +3931,13 @@ body {
 }
 
 .bowling-menu {
-  margin-bottom: clamp(3.125rem, -0.9460297767rem + 17.3697270471vw, 16.25rem);
+  margin-bottom: clamp(3.125rem, 1.7679900744rem + 5.7899090157vw, 7.5rem);
 }
 
 .our-equipment {
-  margin-bottom: clamp(3.125rem, -0.9460297767rem + 17.3697270471vw, 16.25rem);
+  padding-top: clamp(3.125rem, 1.1864143921rem + 8.2712985939vw, 9.375rem) !important;
+  padding-bottom: clamp(3.125rem, 1.1864143921rem + 8.2712985939vw, 9.375rem) !important;
+  background-color: #030306;
 }
 
 .our-equipment__container p {
@@ -3984,6 +3986,7 @@ body {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  background-color: #0a0a10;
 }
 
 .equipment-description {
