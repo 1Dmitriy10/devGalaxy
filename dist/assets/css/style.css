@@ -4022,6 +4022,39 @@ body {
   margin-top: 0;
 }
 
+.btn-glare_anim {
+  overflow: hidden;
+  position: relative;
+  background-color: #ff1a1a;
+  border: 1px solid #ff1a1a;
+}
+.btn-glare_anim:hover {
+  background-color: #ff1a1a;
+  border: 1px solid #ff1a1a;
+}
+.btn-glare_anim:hover .glare_anim {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  left: 110%;
+}
+
+.glare_anim {
+  position: absolute;
+  -webkit-transform: skew(-0.06turn, 18deg);
+  -ms-transform: skew(-0.06turn, 18deg);
+  transform: skew(-0.06turn, 18deg);
+  top: -10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 15px;
+  height: 120%;
+  background-color: rgba(255, 255, 255, 0.377);
+  left: -100%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
 .gap_15 {
   --gap: 15px gap: var(--gap);
 }
