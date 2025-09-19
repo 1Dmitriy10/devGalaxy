@@ -56,7 +56,15 @@
         & p {
 
             &:not(:last-child) {
-                margin-bottom: clamp-px(30, 123);
+                margin-bottom: 123px;
+
+                @media (width<1520px) {
+                    margin-bottom: 190px;
+                }
+
+                @include respond-to("nout") {
+                    margin-bottom: 20px;
+                }
 
             }
         }

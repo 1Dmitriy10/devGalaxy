@@ -43,13 +43,17 @@ const paphosPrimaryslider = new Swiper('.paphos__primary-slider', {
       speed: 700,
     /*Брек-поинты*/
     breakpoints: {
-        1220: {
+      1340: {
             slidesPerView: 3,
             spaceBetween: 240,
         },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 180,
+        },
         992: {
             slidesPerView: 3,
-            spaceBetween: 140,
+            spaceBetween: 100,
         },
         768: {
             slidesPerView: 2,
@@ -228,6 +232,22 @@ const bowlingGallerySlider = new Swiper('.bowling-gallery-swiper', {
         slidesPerView: 4,
       },
     },
+
+});
+
+const galeryTabsSlider = new Swiper('.galery-tabs__slider', {
+  // Стрелки
+    navigation: {
+        nextEl: '.galery-tabs__slider-btn-next',
+        prevEl: '.galery-tabs__slider-btn-prev',
+    },
+  slidesPerView: 1,
+    spaceBetween: 60,
+    loop: true,
+    // speed: 8000,
+   
+    
+    
 
 });
 

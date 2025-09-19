@@ -19,4 +19,4 @@ cтруктура
 
 import { Tabs } from "../vendor/tabs.js"
 
-let tabs = new Tabs({ class: "_tabs-js" })
+let galeryTabs = new Tabs({ class: "galery-tabs" })

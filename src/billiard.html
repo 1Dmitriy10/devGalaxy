@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/libs/head.html',{
+"title": "БИЛЬЯРД"
+})
+
+<body>
+    @@include('html/libs/header.html')
+    <main>
+
+        <section class='main-banner'>
+
+            <div class="main-banner__top max-h-[718px]">
+                <img class='img-bg' src='@img/banner/billiard-banner.png' class='img-responsive' alt=''
+                    loading='lazy' />
+
+                <div class='container main-banner__container'>
+
+                    <div class="main-banner__content-box">
+                        <h1 class="main-banner__title">
+                            БИЛЬЯРД
+                        </h1>
+
+                        <div class="main-banner__text">
+                            Бильярд - это красивая игра, граничащая с подлинным искусством, развивающая терпение,
+                            аккуратность и пробуждающая азарт. Появившись в Европе во второй половине XV в., игра в
+                            бильярд долгое время была привилегией исключительно королевских особ и аристократии: Но
+                            сегодня каждый желающий может прийти в бильярдный клуб и почувствовать себя причастным к
+                            тому, что когда-то было доступно лишь избранным.
+                        </div>
+
+                        <div class="main-banner__btn-box">
+                            <button class="btn main-banner__btn" data-fancybox data-src='#restaurant-menu'>
+                                МЕНю Ресторана
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="main-banner__subtitle-wrap">
+                <div class="container">
+                    <div class="main-banner__subtitle">
+                        АКЦИИ И СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @@include('html/primary-slider.html')
+
+        <section class='paphos-about'>
+            <div class='container paphos-about__container'>
+                <div class="two-col">
+                    <div class="left-col">
+                        <h2 class="title leading-[1.2] !mb-[clamp(1.875rem,1.497rem+1.86vw,3.125rem)]">
+                            Бильярд в галактике
+                        </h2>
+
+                        <p>
+                            У нас вы найдете настоящий оазис для ценителей этой благородной игры. Каждый стол тщательно
+                            подготовлен для игры, а освещение и атмосфера создают идеальные условия.
+                        </p>
+
+                        <p>
+                            Приглашаем вас погрузиться в мир бильярда, где каждая партия становится особенным событием.
+                        </p>
+                    </div>
+
+                    <div class="right-col">
+                        <div class="img-border-bg paphos-about__img-border-bg">
+                            <img class="img-bg" src="@img/about/billiard-about-img.png" alt="">
+                        </div>
+
+                        <div class="border-bg"></div>
+
+                    </div>
+
+                    <button class="!top-[61%]  video-play-btn-wrap paphos-about__video-play-btn-wrap" data-fancybox
+                        data-src='#hidden-video'>
+                        <span class="video-play-btn-text">
+                            Смотреть видео
+                        </span>
+
+                        <div class="video-play-btn">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M11.51 7.56167C11.3582 7.47165 11.1852 7.42342 11.0087 7.42188C10.8322 7.42034 10.6585 7.46554 10.5051 7.55289C10.3517 7.64025 10.2242 7.76664 10.1355 7.91923C10.0468 8.07181 10 8.24517 10 8.42167V31.5783C10 31.7548 10.0468 31.9282 10.1355 32.0808C10.2242 32.2334 10.3517 32.3598 10.5051 32.4471C10.6585 32.5345 10.8322 32.5797 11.0087 32.5781C11.1852 32.5766 11.3582 32.5283 11.51 32.4383L31.0483 20.86C31.1976 20.7715 31.3212 20.6456 31.407 20.4948C31.4929 20.344 31.538 20.1735 31.538 20C31.538 19.8265 31.4929 19.656 31.407 19.5052C31.3212 19.3544 31.1976 19.2285 31.0483 19.14L11.51 7.56167Z"
+                                    fill="#2A2A2A" stroke="#2A2A2A" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </button>
+
+                    <div id="hidden-video" class="hidden-video">
+                        <iframe width="1250" height="703" src="https://www.youtube.com/embed/fWeFxo1eWi8"
+                            title="😺 Самые смешные и милые котята в мире! 🐈 Лучшие видео с котами и котятами! 😸"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class='bowling'>
+            <img class="img-bg" src="@img/billiard/Frame 1077244713.png" alt="">
+
+            <div class='container bowling__container'>
+
+                <h2 class="bowling__title title tc_white-100">
+                    Стоимость ИГРЫ в общем зале
+                </h2>
+
+                <p class="mb_51 text-[var(--1000-belyy)]">
+                    В зале нашего бильярд-клуба, расположенном на нулевом этаже, вас ждут 14 профессиональных бильярдных
+                    столов Ливерпуль фабрики «Старт» и лучшее оборудование европейского класса.
+                </p>
+
+                <p class="text-[var(--1000-belyy)] mb_51">
+                    Столы расположены таким образом, что каждая группа игроков получаетсобственное пространство для игры
+                    и общения. В клубе регулярно проводятся турниры, которые дают возможность опытным игрокам не только
+                    приятно провести время, но и продемонстрировать свой профессионализм.
+                </p>
+
+                <div class='bowling__btn-box'>
+
+                    <div class='card'>
+                        <button class="btn bowling__btn min-w-[265px]">
+                            Понедельник -Четверг
+                        </button>
+                        <div class="bowling__card-title">
+                            2000 ₸
+                        </div>
+                    </div>
+
+                    <div class='card'>
+                        <button class="btn bowling__btn !bg-[#c00] min-w-[265px]">
+                            Пятница - Воскресенье
+                        </button>
+                        <div class="bowling__card-title">
+                            2500 ₸
+                        </div>
+                    </div>
+
+                    <div class='card'>
+                        <button class="btn bowling__btn !bg-[#c00] min-w-[265px]">
+                            Праздничные дни
+                        </button>
+                        <div class="bowling__card-title">
+                            2500 ₸
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <p class="tc_white-100 !text-[clamp(1.375rem,1.186rem+0.93vw,2rem)] font-[700]">
+                    Цена указана за 1 час игры
+                </p>
+
+            </div>
+        </section>
+
+        @@include('html/professional-markers.html')
+        @@include('html/galery-tabs.html')
+
+        <section class='interior !pt-[clamp(1.25rem,-0.64rem+9.3vw,7.5rem)]'>
+            <div class='container interior__container'>
+                <h2 class="title">
+                    Интерьер
+                </h2>
+
+                <div class="slider-btn__box paphos-interior__btn-box">
+
+                    <div id="paphos-interior__slider-btn-prev" class="second-slider-btn slider-btn__prev">
+                        <svg width="48" height="20" viewBox="0 0 48 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.11612 9.25918C0.62796 9.74733 0.62796 10.5388 1.11612 11.0269L9.07107 18.9819C9.55922 19.4701 10.3507 19.4701 10.8388 18.9819C11.327 18.4937 11.327 17.7023 10.8388 17.2141L3.76777 10.1431L10.8388 3.072C11.327 2.58384 11.327 1.79238 10.8388 1.30423C10.3507 0.816073 9.55922 0.816073 9.07107 1.30423L1.11612 9.25918ZM48 8.89307L2 8.89306L2 11.3931L48 11.3931L48 8.89307Z"
+                                fill="#2A2A2A" />
+                        </svg>
+                    </div>
+
+                    <div id="paphos-interior__slider-btn-next" class="second-slider-btn slider-btn__next">
+                        <svg width="48" height="20" viewBox="0 0 48 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M46.8839 11.0269C47.372 10.5388 47.372 9.74734 46.8839 9.25918L38.9289 1.30423C38.4408 0.816076 37.6493 0.816076 37.1612 1.30423C36.673 1.79239 36.673 2.58384 37.1612 3.072L44.2322 10.1431L37.1612 17.2141C36.673 17.7023 36.673 18.4937 37.1612 18.9819C37.6493 19.4701 38.4408 19.4701 38.9289 18.9819L46.8839 11.0269ZM0 11.3931H46V8.89307H0V11.3931Z"
+                                fill="#2A2A2A" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="slider-wrap">
+                    <!-- Слайдер -->
+                    <div class='swiper paphos-interior__slider'>
+                        <!-- Обертка слайдера -->
+                        <div class='swiper-wrapper'>
+                            <!-- Слайды -->
+                            <div class='swiper-slide'>
+                                <div class="interior__card">
+                                    <img class='img-bg' src='@img/billiard/billiard-interior-img-1.png'
+                                        class='img-responsive' alt='' loading='lazy' />
+                                </div>
+                            </div>
+
+                            <div class='swiper-slide'>
+                                <div class="interior__card">
+                                    <img class='img-bg' src='@img/billiard/billiard-interior-img-1.png'
+                                        class='img-responsive' alt='' loading='lazy' />
+                                </div>
+                            </div>
+
+                            <div class='swiper-slide'>
+                                <div class="interior__card">
+                                    <img class='img-bg' src='@img/billiard/billiard-interior-img-1.png'
+                                        class='img-responsive' alt='' loading='lazy' />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Пагинация -->
+                    <div id="paphos-interior__pagination" class='swiper-pagination primary-pagination'></div>
+                </div>
+            </div>
+        </section>
+
+        @@include('html/contacts.html')
+
+    </main>
+    @@include('html/libs/footer.html')
+</body>
+
+</html>

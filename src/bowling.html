@@ -51,8 +51,9 @@
                                 Бронирование
                             </a>
 
-                            <button class="btn main-banner__btn tc_white-100 main-banner__btn-bowling btn-glare_anim">
-                                Меню ресторана
+                            <button data-fancybox data-src="#bowling-menu"
+                                class="btn main-banner__btn tc_white-100 main-banner__btn-bowling btn-glare_anim">
+                                Меню боулинга
                                 <div class="glare_anim"></div>
                             </button>
 
@@ -79,7 +80,7 @@
         <section class='paphos-about'>
             <div class='container paphos-about__container bowling-about__container'>
                 <div class="two-col">
-                    <div class="left-col">
+                    <div class="left-col left-col__bowling">
                         <h2 class="title tc_white-100">
                             боулинг-клуб Галактика
                         </h2>
@@ -149,9 +150,9 @@
                     провести время с детьми!
                 </p>
 
-                <div class='bowling__btn-box scroll-snap'>
+                <div class='bowling__btn-box'>
 
-                    <div class='card scroll-snap__item'>
+                    <div class='card'>
                         <button class="btn bowling__btn">
                             Понедельник
                         </button>
@@ -160,7 +161,7 @@
                         </div>
                     </div>
 
-                    <div class='card scroll-snap__item'>
+                    <div class='card'>
                         <button class="btn bowling__btn">
                             Вторник - четверг
                         </button>
@@ -169,7 +170,7 @@
                         </div>
                     </div>
 
-                    <div class='card scroll-snap__item'>
+                    <div class='card'>
                         <button class="btn bowling__btn">
                             Пятница - Воскресенье
                         </button>
@@ -178,7 +179,7 @@
                         </div>
                     </div>
 
-                    <div class='card scroll-snap__item'>
+                    <div class='card'>
                         <button class="btn bowling__btn bg_red">
                             Праздничные дни
                         </button>
@@ -189,23 +190,23 @@
 
                 </div>
 
-                <button
-                    class="btn main-banner__btn main-banner__btn-bowling bg_brown border_brown booking tc_white-100">
+                <a href="https://rc-galaktika.kz/bouling-boocking/"
+                    class="btn main-banner__btn bg_brown border_brown booking tc_white-100 main-banner__btn-bowling">
                     <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1064_886)">
                             <path
                                 d="M6.173 0.5C6.35865 0.5 6.5367 0.57375 6.66797 0.705025C6.79925 0.836301 6.873 1.01435 6.873 1.2V2.509H14.39V1.209C14.39 1.02335 14.4637 0.845301 14.595 0.714025C14.7263 0.58275 14.9043 0.509 15.09 0.509C15.2757 0.509 15.4537 0.58275 15.585 0.714025C15.7162 0.845301 15.79 1.02335 15.79 1.209V2.509H18.5C19.0303 2.509 19.5388 2.71958 19.9139 3.09443C20.2889 3.46929 20.4997 3.97774 20.5 4.508V18.501C20.4997 19.0313 20.2889 19.5397 19.9139 19.9146C19.5388 20.2894 19.0303 20.5 18.5 20.5H2.5C1.96974 20.5 1.46118 20.2894 1.08614 19.9146C0.711096 19.5397 0.500265 19.0313 0.5 18.501V4.508C0.500265 3.97774 0.711096 3.46929 1.08614 3.09443C1.46118 2.71958 1.96974 2.509 2.5 2.509H5.473V1.199C5.47327 1.01352 5.54713 0.835731 5.67838 0.704672C5.80963 0.573612 5.98752 0.5 6.173 0.5ZM1.9 8.242V18.501C1.9 18.5798 1.91552 18.6578 1.94567 18.7306C1.97583 18.8034 2.02002 18.8695 2.07574 18.9253C2.13145 18.981 2.19759 19.0252 2.27039 19.0553C2.34319 19.0855 2.42121 19.101 2.5 19.101H18.5C18.5788 19.101 18.6568 19.0855 18.7296 19.0553C18.8024 19.0252 18.8685 18.981 18.9243 18.9253C18.98 18.8695 19.0242 18.8034 19.0543 18.7306C19.0845 18.6578 19.1 18.5798 19.1 18.501V8.256L1.9 8.242ZM7.167 15.119V16.785H5.5V15.119H7.167ZM11.333 15.119V16.785H9.667V15.119H11.333ZM15.5 15.119V16.785H13.833V15.119H15.5ZM7.167 11.142V12.808H5.5V11.142H7.167ZM11.333 11.142V12.808H9.667V11.142H11.333ZM15.5 11.142V12.808H13.833V11.142H15.5ZM5.473 3.908H2.5C2.42121 3.908 2.34319 3.92352 2.27039 3.95367C2.19759 3.98382 2.13145 4.02802 2.07574 4.08374C2.02002 4.13945 1.97583 4.20559 1.94567 4.27839C1.91552 4.35119 1.9 4.42921 1.9 4.508V6.843L19.1 6.857V4.508C19.1 4.42921 19.0845 4.35119 19.0543 4.27839C19.0242 4.20559 18.98 4.13945 18.9243 4.08374C18.8685 4.02802 18.8024 3.98382 18.7296 3.95367C18.6568 3.92352 18.5788 3.908 18.5 3.908H15.79V4.837C15.79 5.02265 15.7162 5.2007 15.585 5.33197C15.4537 5.46325 15.2757 5.537 15.09 5.537C14.9043 5.537 14.7263 5.46325 14.595 5.33197C14.4637 5.2007 14.39 5.02265 14.39 4.837V3.908H6.873V4.828C6.873 5.01365 6.79925 5.1917 6.66797 5.32297C6.5367 5.45425 6.35865 5.528 6.173 5.528C5.98735 5.528 5.8093 5.45425 5.67803 5.32297C5.54675 5.1917 5.473 5.01365 5.473 4.828V3.908Z"
-                                fill="white"></path>
+                                fill="white" />
                         </g>
                         <defs>
                             <clipPath id="clip0_1064_886">
-                                <rect width="20" height="20" fill="white" transform="translate(0.5 0.5)"></rect>
+                                <rect width="20" height="20" fill="white" transform="translate(0.5 0.5)" />
                             </clipPath>
                         </defs>
                     </svg>
 
                     Бронирование
-                </button>
+                </a>
 
                 <p class="tc_white-100">
                     *Игра в боулинг-клубе «Галактика» построена на призовой системе. Призовая система действует только в
@@ -293,8 +294,9 @@
 
                 </div>
 
-                <button class="main-banner__btn-bowling btn tc_white-100 bowling-menu__btn btn-glare_anim">
-                    Меню ресторана
+                <button data-fancybox data-src="#bowling-menu"
+                    class="main-banner__btn-bowling btn tc_white-100 bowling-menu__btn btn-glare_anim">
+                    Меню боулинга
                     <div class="glare_anim"></div>
                 </button>
 

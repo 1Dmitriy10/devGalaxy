@@ -23,6 +23,30 @@ body {
     }
 }
 
+.equipment-content-container {
+    & ul {
+        padding-left: 0 !important;
+
+        & li {
+            padding-left: 20px;
+            position: relative;
+
+            &::before {
+                content: "";
+                display: flex;
+                position: absolute;
+                left: 0;
+                top: 10px;
+                width: 4px;
+                height: 4px;
+                background-color: var(--1000-belyy);
+                border-radius: 100%
+            }
+        }
+    }
+}
+
+
 //==================================
 
 
@@ -40,6 +64,8 @@ body {
 @import "./components/contacts";
 @import "./components/bowling";
 @import "./components/bowling-menu";
+@import "./components/professional-markers";
+@import "./components/galery-tabs";
 
 //================Атомарные стили=====================
 @import "./vendor/atomar";

@@ -1,6 +1,6 @@
 .bowling {
     position: relative;
-    height: 919px;
+    min-height: 919px;
     display: flex;
     align-items: center;
     margin-bottom: clamp-px(120, 50);
@@ -42,20 +42,20 @@
 
 .bowling__btn-box {
     display: flex;
-    // flex-wrap: wrap;
-    // width: fit-content;
+    flex-wrap: wrap;
     max-width: 100%;
     gap: clamp-px(20, 60);
     margin-bottom: clamp-px(30, 40);
-    // --row-gap: 20px;
-    // --col-gap: 40px;
 
-    // &>.card {
-    //     flex: 0 1 auto;
+    @include respond-to('tel') {
+        flex-direction: column;
+        width: 100%;
 
-    //     display: flex;
-    //     flex-direction: column;
-    // }
+        &>.card {
+            align-self: center;
+        }
+    }
+
 }
 
 .bowling__btn {
@@ -72,7 +72,7 @@
 .bowling__card-title {
     font-family: var(--font-family);
     font-weight: 800;
-    font-size: 36px;
+    font-size: clamp-px(24, 36);
     color: var(--1000-belyy);
     text-align: center;
 }

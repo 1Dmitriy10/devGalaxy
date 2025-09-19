@@ -1335,7 +1335,7 @@ cтруктура
 
 
 
-let tabs = new _vendor_tabs_js__WEBPACK_IMPORTED_MODULE_0__.Tabs({ class: "_tabs-js" })
+let galeryTabs = new _vendor_tabs_js__WEBPACK_IMPORTED_MODULE_0__.Tabs({ class: "galery-tabs" })
 
 
 /***/ }),
@@ -1469,13 +1469,17 @@ const paphosPrimaryslider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["defa
       speed: 700,
     /*Брек-поинты*/
     breakpoints: {
-        1220: {
+      1340: {
             slidesPerView: 3,
             spaceBetween: 240,
         },
+        1200: {
+            slidesPerView: 3,
+            spaceBetween: 180,
+        },
         992: {
             slidesPerView: 3,
-            spaceBetween: 140,
+            spaceBetween: 100,
         },
         768: {
             slidesPerView: 2,
@@ -1654,6 +1658,22 @@ const bowlingGallerySlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["def
         slidesPerView: 4,
       },
     },
+
+});
+
+const galeryTabsSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.galery-tabs__slider', {
+  // Стрелки
+    navigation: {
+        nextEl: '.galery-tabs__slider-btn-next',
+        prevEl: '.galery-tabs__slider-btn-prev',
+    },
+  slidesPerView: 1,
+    spaceBetween: 60,
+    loop: true,
+    // speed: 8000,
+   
+    
+    
 
 });
 
