@@ -66,6 +66,10 @@
             max-width: 100%;
             padding-top: 0;
         }
+
+        @include respond-to("tab") {
+            justify-content: center;
+        }
     }
 
     & .tabs__item.active {
@@ -198,4 +202,14 @@
         top: auto !important;
         bottom: -25px !important;
     }
+}
+
+.tabs__item-text-trim {}
+
+.btn.show-more-btn {
+    align-self: center;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }

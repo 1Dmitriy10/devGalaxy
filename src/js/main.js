@@ -100,6 +100,9 @@ import { rotateTextFormImg } from "./components/rotateTextFormImg.js";
 //------------Скрытые поля формы ресторана пафос---------------
 import { paphosFormHidden } from "./components/paphosFormHidden.js";
 
+//------------Скрытие текста---------------
+import { trimText } from "./components/trimText.js";
+
 
 
 

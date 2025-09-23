@@ -1445,9 +1445,9 @@ const paphosPrimaryslider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["defa
     /*Отступ у карточек*/
     spaceBetween: 20,
     /*Показывать по n карточек*/
-    slidesPerView: 1,
+    slidesPerView: 1.2,
     /* При достижении конца, перепрыгнуть в начало */
-    // rewind: true,
+    rewind: true,
     /*Увеличение при наведении курсора мыши */
     // zoom: true,
     /*Ленивая подгрузка */
@@ -1460,7 +1460,7 @@ const paphosPrimaryslider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["defa
     // autoHeight: true,
     /*иконка захвата при наведении на слайд*/
     grabCursor: true,
-    firstSlideToShow: 1,
+    // firstSlideToShow: 1,
     initialSlide: 1,
     /*Автоматическое перелистывание*/
     autoplay: {
@@ -1563,27 +1563,17 @@ const paphosInteriorSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["def
         clickable: true
       },
       centeredSlides: true,
+      // loop: true,
 
     /*Отступ у карточек*/
     spaceBetween: 20,
     /*Показывать по n карточек*/
-    slidesPerView: 1,
-    /* При достижении конца, перепрыгнуть в начало */
-    // rewind: true,
-    /*Увеличение при наведении курсора мыши */
-    // zoom: true,
-    /*Ленивая подгрузка */
-    // lazy: true,
-    /*Бесконечная прокрутка */
-    // loop: true,
-    /*Ориентация */
-    // direction: 'vertical',
-    /*Авто высота*/
-    // autoHeight: true,
+    slidesPerView: 1.2,
+ 
     /*иконка захвата при наведении на слайд*/
     grabCursor: true,
     // firstSlideToShow: 1,
-    // initialSlide: 1,
+    initialSlide: 1,
     /*Автоматическое перелистывание*/
     // autoplay: {
     //     delay: 3000,
@@ -1681,10 +1671,15 @@ console.log(elID)
         clickable: true
       },
       centeredSlides: true,
-  slidesPerView: 1,
-    spaceBetween: 60,
-    loop: true,
+  slidesPerView: 1.2,
+    spaceBetween: 20,
+      initialSlide: 1,
     // speed: 8000,
+     breakpoints: {
+      640: {
+        slidesPerView: 1,
+      }
+    },
    
     
     
@@ -25013,6 +25008,62 @@ return jQuery;
 } );
 
 
+/***/ }),
+/* 65 */
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   trimText: () => (/* binding */ trimText)
+/* harmony export */ });
+function trimText() {
+    const textElements = document.querySelectorAll('.tabs__item-text-trim');
+    if(!textElements) {return null}
+    
+    textElements.forEach(element => {
+        const lineHeight = parseInt(getComputedStyle(element).lineHeight) || 20;
+        const linesCount = element.scrollHeight / lineHeight;
+        
+        // Проверяем, есть ли уже кнопка
+        const existingButton = element.nextElementSibling?.classList.contains('show-more-btn') 
+            ? element.nextElementSibling 
+            : null;
+        
+        if (linesCount > 3) {
+            element.classList.add('trim-text');
+            
+            if (!existingButton) {
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.className = 'btn show-more-btn';
+                button.textContent = 'Показать все';
+                
+                button.addEventListener('click', function() {
+                    element.classList.toggle('trim-text');
+                    this.textContent = element.classList.contains('trim-text') 
+                        ? 'Показать все' 
+                        : 'Скрыть';
+                });
+                
+                element.after(button);
+            }
+        } else {
+            // Если текст стал короче - убираем класс и кнопку
+            element.classList.remove('trim-text');
+            if (existingButton) {
+                existingButton.remove();
+            }
+        }
+    });
+}
+
+// Инициализация
+trimText();
+window.addEventListener('resize', trimText);
+
+// Если контент динамически меняется, вызывайте trimText() после изменений
+
 /***/ })
 /******/ 	]);
 /************************************************************************/
@@ -25131,6 +25182,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _libs_mask_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(60);
 /* harmony import */ var _components_rotateTextFormImg_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(62);
 /* harmony import */ var _components_paphosFormHidden_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(63);
+/* harmony import */ var _components_trimText_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(65);
 //------------------------Спойлеры-----------------------
 
 
@@ -25231,6 +25283,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 //------------Скрытые поля формы ресторана пафос---------------
+
+
+//------------Скрытие текста---------------
 
 
 

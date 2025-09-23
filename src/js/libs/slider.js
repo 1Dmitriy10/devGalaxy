@@ -19,9 +19,9 @@ const paphosPrimaryslider = new Swiper('.paphos__primary-slider', {
     /*Отступ у карточек*/
     spaceBetween: 20,
     /*Показывать по n карточек*/
-    slidesPerView: 1,
+    slidesPerView: 1.2,
     /* При достижении конца, перепрыгнуть в начало */
-    // rewind: true,
+    rewind: true,
     /*Увеличение при наведении курсора мыши */
     // zoom: true,
     /*Ленивая подгрузка */
@@ -34,7 +34,7 @@ const paphosPrimaryslider = new Swiper('.paphos__primary-slider', {
     // autoHeight: true,
     /*иконка захвата при наведении на слайд*/
     grabCursor: true,
-    firstSlideToShow: 1,
+    // firstSlideToShow: 1,
     initialSlide: 1,
     /*Автоматическое перелистывание*/
     autoplay: {
@@ -137,27 +137,17 @@ const paphosInteriorSlider = new Swiper('.paphos-interior__slider', {
         clickable: true
       },
       centeredSlides: true,
+      // loop: true,
 
     /*Отступ у карточек*/
     spaceBetween: 20,
     /*Показывать по n карточек*/
-    slidesPerView: 1,
-    /* При достижении конца, перепрыгнуть в начало */
-    // rewind: true,
-    /*Увеличение при наведении курсора мыши */
-    // zoom: true,
-    /*Ленивая подгрузка */
-    // lazy: true,
-    /*Бесконечная прокрутка */
-    // loop: true,
-    /*Ориентация */
-    // direction: 'vertical',
-    /*Авто высота*/
-    // autoHeight: true,
+    slidesPerView: 1.2,
+ 
     /*иконка захвата при наведении на слайд*/
     grabCursor: true,
     // firstSlideToShow: 1,
-    // initialSlide: 1,
+    initialSlide: 1,
     /*Автоматическое перелистывание*/
     // autoplay: {
     //     delay: 3000,
@@ -255,10 +245,15 @@ console.log(elID)
         clickable: true
       },
       centeredSlides: true,
-  slidesPerView: 1,
-    spaceBetween: 60,
-    loop: true,
+  slidesPerView: 1.2,
+    spaceBetween: 20,
+      initialSlide: 1,
     // speed: 8000,
+     breakpoints: {
+      640: {
+        slidesPerView: 1,
+      }
+    },
    
     
     
