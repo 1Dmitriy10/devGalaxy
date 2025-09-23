@@ -1661,12 +1661,26 @@ const bowlingGallerySlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["def
 
 });
 
-const galeryTabsSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.galery-tabs__slider', {
+let arrGaleryTabsSlider = document.querySelectorAll(".galery-tabs__slider");
+if (!arrGaleryTabsSlider) {}
+else{
+  let GaleryTabsSliderCount = 1;
+arrGaleryTabsSlider.forEach(el=>{
+let elID = el.id;
+console.log(elID)
+// let name = `galeryTabsSlider_${GaleryTabsSliderCount}`
+
+  const name = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](`#${elID}`, {
   // Стрелки
     navigation: {
         nextEl: '.galery-tabs__slider-btn-next',
         prevEl: '.galery-tabs__slider-btn-prev',
     },
+     pagination: {
+        el: `#galery-tabs__pagination_${GaleryTabsSliderCount}`,
+        clickable: true
+      },
+      centeredSlides: true,
   slidesPerView: 1,
     spaceBetween: 60,
     loop: true,
@@ -1676,6 +1690,13 @@ const galeryTabsSlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default
     
 
 });
+
+GaleryTabsSliderCount++
+
+})
+}
+
+
 
 
 

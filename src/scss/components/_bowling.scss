@@ -3,10 +3,12 @@
     min-height: 919px;
     display: flex;
     align-items: center;
-    margin-bottom: clamp-px(120, 50);
+    margin-bottom: clamp-px(50, 120);
+    padding: 50px 20px !important;
 }
 
 .bowling__container {
+
     width: 100%;
     position: relative;
     z-index: 2;

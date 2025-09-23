@@ -3,8 +3,8 @@
 }
 
 .galery-tabs__container {
-    padding-top: clamp-px(30, 136);
-    padding-bottom: clamp-px(30, 120);
+    padding-top: clamp-px(50, 136);
+    padding-bottom: clamp-px(50, 60);
 }
 
 .galery-tabs {
@@ -86,7 +86,7 @@
 
     & .slider-wrap {
         position: relative;
-        margin-bottom: clamp-px(20, 40);
+        margin-bottom: clamp-px(40, 65);
     }
 }
 
@@ -117,6 +117,10 @@
     &>svg {
         width: clamp-px(5, 10);
         height: clamp-px(10, 20);
+    }
+
+    @include respond-to('tab') {
+        display: none;
     }
 }
 
@@ -168,10 +172,12 @@
 
     & .bowling__btn-box {
         align-self: center;
+        margin-bottom: 0;
 
         & .btn {
             border-radius: clamp-px(8, 10);
             min-width: 265px;
+            cursor: auto;
         }
     }
 }
@@ -182,4 +188,14 @@
     text-transform: uppercase;
     text-align: center;
     color: var(--1000-belyy);
+}
+
+.galery-tabs {
+    position: relative;
+
+    & .swiper-pagination {
+        justify-content: center;
+        top: auto !important;
+        bottom: -25px !important;
+    }
 }
