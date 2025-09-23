@@ -154,24 +154,13 @@ const paphosInteriorSlider = new Swiper('.paphos-interior__slider', {
     //   },
     //   speed: 700,
     /*Брек-поинты*/
-    // breakpoints: {
-    //     1220: {
-    //         slidesPerView: 3,
-    //         spaceBetween: 240,
-    //     },
-    //     992: {
-    //         slidesPerView: 3,
-    //         spaceBetween: 140,
-    //     },
-    //     768: {
-    //         slidesPerView: 2,
-    //         spaceBetween: 100,
-    //     },
-    //     568: {
-    //         slidesPerView: 2,
-    //         spaceBetween: 20,
-    //     }
-    // },
+    breakpoints: {
+
+        568: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        }
+    },
 
 });
 
