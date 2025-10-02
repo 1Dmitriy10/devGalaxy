@@ -3424,6 +3424,7 @@ body {
   aspect-ratio: 1/1.12;
   position: relative;
   overflow: hidden;
+  border-radius: clamp(1rem, 0.9224565757rem + 0.3308519438vw, 1.25rem);
 }
 
 .food img {
@@ -4109,6 +4110,10 @@ body {
   transition: 0.4s;
 }
 
+.swiper-slide.food {
+  cursor: pointer;
+}
+
 .professional-markers {
   margin-bottom: clamp(3.125rem, 1.7679900744rem + 5.7899090157vw, 7.5rem);
 }
@@ -4234,8 +4239,8 @@ body {
 }
 
 .galery-tabs__container {
-  padding-top: clamp(3.125rem, 1.4578163772rem + 7.1133167907vw, 8.5rem);
-  padding-bottom: clamp(3.125rem, 2.9311414392rem + 0.8271298594vw, 3.75rem);
+  padding-top: clamp(3.125rem, 1.7679900744rem + 5.7899090157vw, 7.5rem);
+  padding-bottom: clamp(3.125rem, 1.7679900744rem + 5.7899090157vw, 7.5rem);
 }
 
 .galery-tabs .tabs__title-box {

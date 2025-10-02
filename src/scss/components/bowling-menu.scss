@@ -127,6 +127,7 @@
     aspect-ratio: 1/1.12;
     position: relative;
     overflow: hidden;
+    border-radius: clamp-px(16, 20);
 }
 
 .food img {
@@ -801,4 +802,8 @@
     background-color: rgba(255, 255, 255, 0.377);
     left: -100%;
     transition: 0.4s;
+}
+
+.swiper-slide.food {
+    cursor: pointer;
 }
