@@ -4683,6 +4683,12 @@ body {
     aspect-ratio: 1/1.25;
   }
 }
+@media (max-width: 575.98px) {
+  .prague-nights-brewery__bottom-right-col-img {
+    min-height: clamp(12.5rem, 8.2351116625rem + 18.1968569065vw, 26.25rem);
+    aspect-ratio: auto;
+  }
+}
 
 .small-banner {
   position: relative;
