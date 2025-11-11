@@ -4806,6 +4806,7 @@ body {
   margin-top: auto;
   padding: 15px 21px;
   background: #d2904f;
+  border: 1px solid #d2904f;
   font-weight: 600;
   font-size: clamp(0.875rem, 0.8168424318rem + 0.2481389578vw, 1.0625rem);
   color: var(--1000-belyy);
@@ -4816,6 +4817,23 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.prague-nights-info__btn > svg path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.prague-nights-info__btn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: transparent;
+  color: #d2904f;
+}
+.prague-nights-info__btn:hover > svg path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  fill: #d2904f;
 }
 @media (max-width: 575.98px) {
   .prague-nights-info__btn {

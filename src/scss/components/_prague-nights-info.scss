@@ -52,12 +52,34 @@
     margin-top: auto;
     padding: 15px 21px;
     background: #d2904f;
+    border: 1px solid #d2904f;
     font-weight: 600;
     font-size: clamp-px(14, 17);
     color: var(--1000-belyy);
     max-width: fit-content;
     gap: 20px;
     align-items: center;
+    transition: 0.3s;
+
+    &>svg {
+        & path {
+            transition: 0.3s;
+        }
+    }
+
+    &:hover {
+        transition: 0.3s;
+        background: transparent;
+        color: #d2904f;
+
+        &>svg {
+            & path {
+                transition: 0.3s;
+                fill: #d2904f;
+            }
+        }
+
+    }
 
     @include respond-to("tel") {
         align-self: center;
