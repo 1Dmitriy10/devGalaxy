@@ -174,6 +174,7 @@ summary::marker {
 :root .container {
   max-width: 1444px;
   margin: 0 auto;
+  inline-size: 100%;
 }
 @media (max-width: 1399.98px) {
   :root .container {
@@ -4488,6 +4489,435 @@ body {
   padding: 5px 15px;
   border-radius: 20px;
   margin-bottom: 20px;
+}
+
+.prague-nights__btn-menu {
+  font-size: clamp(0.875rem, 0.8168424318rem + 0.2481389578vw, 1.0625rem);
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+@media (max-width: 575.98px) {
+  .prague-nights__btn-menu {
+    max-width: 100%;
+  }
+}
+
+.prague-nights-brewery {
+  position: relative;
+  overflow: hidden;
+}
+
+.prague-nights-brewery__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: clamp(26.25rem, 18.8252171216rem + 31.6790736146vw, 50.1875rem);
+  overflow: hidden;
+}
+
+.prague-nights-brewery__container {
+  padding-top: clamp(1.5625rem, 0.4962779156rem + 4.5492142266vw, 5rem);
+  padding-bottom: clamp(3.125rem, 1.7679900744rem + 5.7899090157vw, 7.5rem);
+  position: relative;
+  z-index: 2;
+}
+.prague-nights-brewery__container p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.8168424318rem + 0.2481389578vw, 1.0625rem);
+  line-height: 150%;
+  color: #000;
+}
+
+.prague-nights-brewery__slider-wrap {
+  margin-top: clamp(1.25rem, 0.8622828784rem + 1.6542597188vw, 2.5rem);
+  position: relative;
+  margin-bottom: clamp(1.875rem, 1.2934243176rem + 2.4813895782vw, 3.75rem);
+}
+
+.brewery__slider .galery-tabs__slid {
+  aspect-ratio: 1/0.43;
+  border-radius: clamp(0.625rem, 0.4311414392rem + 0.8271298594vw, 1.25rem);
+}
+
+.brewery__slider-btn-prev {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-left: -140px;
+}
+@media (width < 1800px) {
+  .brewery__slider-btn-prev {
+    margin-left: -70px;
+  }
+}
+@media (width < 1600px) {
+  .brewery__slider-btn-prev {
+    margin-left: 0;
+  }
+}
+
+.brewery__slider-btn-next {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0;
+  margin-right: -140px;
+}
+@media (width < 1800px) {
+  .brewery__slider-btn-next {
+    margin-right: -70px;
+  }
+}
+@media (width < 1600px) {
+  .brewery__slider-btn-next {
+    margin-right: 0;
+  }
+}
+
+#brewery__pagination {
+  width: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  bottom: 10px !important;
+}
+
+.prague-nights-brewery__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media (max-width: 991.98px) {
+  .prague-nights-brewery__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.prague-nights-brewery__bottom-left-col {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  max-width: 620px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.prague-nights-brewery__bottom-left-col-title {
+  font-weight: 700;
+  font-size: clamp(1.375rem, 1.1035980149rem + 1.1579818031vw, 2.25rem);
+  line-height: 150%;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: clamp(1.25rem, 0.8622828784rem + 1.6542597188vw, 2.5rem);
+}
+@media (max-width: 575.98px) {
+  .prague-nights-brewery__bottom-left-col-title {
+    text-align: center;
+  }
+}
+
+.prague-nights-brewery__bottom-left-col-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.prague-nights-brewery__bottom-left-col-text p {
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.8168424318rem + 0.2481389578vw, 1.0625rem);
+  line-height: 150%;
+  color: var(--black);
+}
+.prague-nights-brewery__bottom-left-col-text p:not(:last-child) {
+  margin-bottom: clamp(0.9375rem, 0.8405707196rem + 0.4135649297vw, 1.25rem);
+}
+
+.prague-nights-brewery__bottom-right-col {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  max-width: 710px;
+  min-width: 560px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 991.98px) {
+  .prague-nights-brewery__bottom-right-col {
+    max-width: 100%;
+    min-width: auto;
+  }
+}
+
+.prague-nights-brewery__bottom-right-col-img {
+  position: relative;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 calc((100% - 20px) / 2);
+  flex: 0 1 calc((100% - 20px) / 2);
+  min-height: clamp(12.5rem, 8.2351116625rem + 18.1968569065vw, 26.25rem);
+}
+@media (max-width: 991.98px) {
+  .prague-nights-brewery__bottom-right-col-img {
+    min-height: clamp(12.5rem, 8.2351116625rem + 18.1968569065vw, 26.25rem);
+    aspect-ratio: 1/1.25;
+  }
+}
+
+.small-banner {
+  position: relative;
+  padding-top: clamp(3.125rem, 1.7679900744rem + 5.7899090157vw, 7.5rem) !important;
+  padding-bottom: clamp(3.125rem, 1.7679900744rem + 5.7899090157vw, 7.5rem) !important;
+}
+
+.small-banner__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.small-banner__container {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: clamp(1rem, 0.9224565757rem + 0.3308519438vw, 1.25rem);
+  padding: clamp(1.25rem, 0.8622828784rem + 1.6542597188vw, 2.5rem) clamp(0.9375rem, 0.8405707196rem + 0.4135649297vw, 1.25rem);
+  position: relative;
+  z-index: 2;
+}
+
+.small-banner__text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.small-banner__text-box p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--1000-belyy);
+}
+
+.small-banner__text-box-title {
+  font-weight: 700;
+  font-size: clamp(1.5rem, 0.8021091811rem + 2.9776674938vw, 3.75rem);
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.prague-nights-info {
+  margin-top: clamp(3.125rem, 1.7679900744rem + 5.7899090157vw, 7.5rem);
+  margin-bottom: clamp(3.125rem, 1.7679900744rem + 5.7899090157vw, 7.5rem);
+}
+
+.prague-nights-info__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: clamp(3.125rem, 1.7679900744rem + 5.7899090157vw, 7.5rem);
+}
+
+.prague-nights-info-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media (max-width: 991.98px) {
+  .prague-nights-info-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.prague-nights-info-row__text-box {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.prague-nights-info-row__text-box p:not(:last-child) {
+  margin-bottom: clamp(0.9375rem, 0.8405707196rem + 0.4135649297vw, 1.25rem);
+}
+@media (max-width: 991.98px) {
+  .prague-nights-info-row__text-box {
+    max-width: 100%;
+  }
+}
+
+.prague-nights-info-row__title {
+  font-weight: 700;
+  font-size: clamp(1.625rem, 0.9658808933rem + 2.8122415219vw, 3.75rem);
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: clamp(1.25rem, 0.8622828784rem + 1.6542597188vw, 2.5rem);
+}
+@media (max-width: 575.98px) {
+  .prague-nights-info-row__title {
+    text-align: center;
+  }
+}
+
+.prague-nights-info__btn {
+  margin-top: auto;
+  padding: 15px 21px;
+  background: #d2904f;
+  border: 1px solid #d2904f;
+  font-weight: 600;
+  font-size: clamp(0.875rem, 0.8168424318rem + 0.2481389578vw, 1.0625rem);
+  color: var(--1000-belyy);
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  gap: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.prague-nights-info__btn > svg path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.prague-nights-info__btn:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  background: transparent;
+  color: #d2904f;
+}
+.prague-nights-info__btn:hover > svg path {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  fill: #d2904f;
+}
+@media (max-width: 575.98px) {
+  .prague-nights-info__btn {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+}
+
+.prague-nights-info-row__img {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  max-width: 765px;
+  min-width: 390px;
+  position: relative;
+  aspect-ratio: 1/0.68;
+  border-radius: clamp(1rem, 0.9224565757rem + 0.3308519438vw, 1.25rem);
+  overflow: hidden;
+}
+.prague-nights-info-row__img .img-bg {
+  border-radius: clamp(1rem, 0.9224565757rem + 0.3308519438vw, 1.25rem);
+}
+@media (max-width: 991.98px) {
+  .prague-nights-info-row__img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .prague-nights-info-row__img {
+    min-width: auto;
+  }
+}
+
+.prague-nights-info-row.second {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #fafafa;
+  border: 1px solid #ced4da;
+  border-radius: clamp(1rem, 0.9224565757rem + 0.3308519438vw, 1.25rem);
+  padding: clamp(1.25rem, 1.0561414392rem + 0.8271298594vw, 1.875rem) clamp(0.9375rem, 0.8405707196rem + 0.4135649297vw, 1.25rem);
+}
+.prague-nights-info-row.second p {
+  text-align: center;
+  color: var(--black);
+}
+
+.prague-nights-info-row__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 10px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: clamp(1.875rem, 0.6730769231rem + 5.1282051282vw, 5.75rem);
+}
+@media (max-width: 575.98px) {
+  .prague-nights-info-row__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.prague-nights-info-row__top-img {
+  position: relative;
+  width: clamp(9.375rem, 6.8936104218rem + 10.5872622002vw, 17.375rem);
+  aspect-ratio: 1/1;
+}
+
+.prague-nights-info-row__top-title {
+  font-weight: 800;
+  font-size: clamp(1.375rem, 0.7934243176rem + 2.4813895782vw, 3.25rem);
+  text-transform: uppercase;
+  text-align: center;
+  color: #9f000c;
+  line-height: 120%;
 }
 
 .gap_15 {

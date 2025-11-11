@@ -1680,6 +1680,29 @@ GaleryTabsSliderCount++
 })
 }
 
+const brewerySlider = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"]('.brewery__slider', {
+  // Стрелки
+    navigation: {
+        nextEl: '.brewery__slider-btn-next',
+        prevEl: '.brewery__slider-btn-prev',
+    },
+     pagination: {
+        el: `#brewery__pagination`,
+        clickable: true
+      },
+      centeredSlides: true,
+  slidesPerView: 1.2,
+    spaceBetween: 20,
+      initialSlide: 1,
+    // speed: 8000,
+     breakpoints: {
+      640: {
+        slidesPerView: 1,
+      }
+    },
+
+});
+
 
 
 
@@ -25011,47 +25034,50 @@ function trimText() {
     if(!textElements) {return null}
     
     textElements.forEach(element => {
-        const lineHeight = parseInt(getComputedStyle(element).lineHeight) || 20;
-        const linesCount = element.scrollHeight / lineHeight;
-        
-        // Проверяем, есть ли уже кнопка
+        // Удаляем существующую кнопку перед проверкой
         const existingButton = element.nextElementSibling?.classList.contains('show-more-btn') 
             ? element.nextElementSibling 
             : null;
+        if (existingButton) {
+            existingButton.remove();
+        }
+        element.classList.remove('trim-text');
         
-        if (linesCount > 3) {
+        // Проверяем высоту после сброса стилей
+        const clientHeight = element.clientHeight;
+        const scrollHeight = element.scrollHeight;
+        const lineHeight = parseInt(getComputedStyle(element).lineHeight) || 20;
+        
+        // Более точная проверка - если контент превышает 3.5 строки
+        if (scrollHeight > clientHeight || (scrollHeight / lineHeight) > 3.5) {
             element.classList.add('trim-text');
             
-            if (!existingButton) {
-                const button = document.createElement('button');
-                button.type = 'button';
-                button.className = 'btn show-more-btn';
-                button.textContent = 'Показать все';
-                
-                button.addEventListener('click', function() {
-                    element.classList.toggle('trim-text');
-                    this.textContent = element.classList.contains('trim-text') 
-                        ? 'Показать все' 
-                        : 'Скрыть';
-                });
-                
-                element.after(button);
-            }
-        } else {
-            // Если текст стал короче - убираем класс и кнопку
-            element.classList.remove('trim-text');
-            if (existingButton) {
-                existingButton.remove();
-            }
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'btn show-more-btn';
+            button.textContent = 'Показать все';
+            
+            button.addEventListener('click', function() {
+                element.classList.toggle('trim-text');
+                this.textContent = element.classList.contains('trim-text') 
+                    ? 'Показать все' 
+                    : 'Скрыть';
+            });
+            
+            element.after(button);
         }
     });
 }
 
 // Инициализация
-trimText();
+setTimeout(trimText, 100);
 window.addEventListener('resize', trimText);
 
-// Если контент динамически меняется, вызывайте trimText() после изменений
+document.querySelectorAll('.tabs__title').forEach(title => {
+    title.addEventListener('click', function() {
+        setTimeout(trimText, 150); // Даем больше времени на переключение контента
+    });
+});
 
 /***/ })
 /******/ 	]);
