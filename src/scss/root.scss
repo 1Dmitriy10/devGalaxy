@@ -7,6 +7,7 @@
     .container {
         max-width: 1444px;
         margin: 0 auto;
+        inline-size: 100%;
 
         @include respond-to("pc") {
             max-width: 1210px;

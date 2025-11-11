@@ -254,6 +254,29 @@ GaleryTabsSliderCount++
 })
 }
 
+const brewerySlider = new Swiper('.brewery__slider', {
+  // Стрелки
+    navigation: {
+        nextEl: '.brewery__slider-btn-next',
+        prevEl: '.brewery__slider-btn-prev',
+    },
+     pagination: {
+        el: `#brewery__pagination`,
+        clickable: true
+      },
+      centeredSlides: true,
+  slidesPerView: 1.2,
+    spaceBetween: 20,
+      initialSlide: 1,
+    // speed: 8000,
+     breakpoints: {
+      640: {
+        slidesPerView: 1,
+      }
+    },
+
+});
+
 
 
 

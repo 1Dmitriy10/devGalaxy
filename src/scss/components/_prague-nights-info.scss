@@ -1,0 +1,131 @@
+.prague-nights-info {
+    margin-top: clamp-px(50, 120);
+    margin-bottom: clamp-px(50, 120);
+}
+
+.prague-nights-info__container {
+    display: flex;
+    flex-direction: column;
+    gap: clamp-px(50, 120);
+}
+
+.prague-nights-info-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    @include respond-to('nout') {
+        flex-direction: column;
+    }
+}
+
+.prague-nights-info-row__text-box {
+    flex: 1 1 auto;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+
+    & p {
+        &:not(:last-child) {
+            margin-bottom: clamp-px(15, 20);
+        }
+    }
+
+    @include respond-to('nout') {
+        max-width: 100%;
+    }
+}
+
+.prague-nights-info-row__title {
+    font-weight: 700;
+    font-size: clamp-px(26, 60);
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: clamp-px(20, 40);
+
+    @include respond-to("tel") {
+        text-align: center;
+    }
+}
+
+.prague-nights-info__btn {
+    margin-top: auto;
+    padding: 15px 21px;
+    background: #d2904f;
+    font-weight: 600;
+    font-size: clamp-px(14, 17);
+    color: var(--1000-belyy);
+    max-width: fit-content;
+    gap: 20px;
+    align-items: center;
+
+    @include respond-to("tel") {
+        align-self: center;
+    }
+}
+
+.prague-nights-info-row__img {
+    flex: 1 1 auto;
+    max-width: 765px;
+    min-width: 390px;
+    position: relative;
+    aspect-ratio: 1/0.68;
+    border-radius: clamp-px(16, 20);
+    overflow: hidden;
+
+    & .img-bg {
+        border-radius: clamp-px(16, 20);
+    }
+
+    @include respond-to('nout') {
+        max-width: 100%;
+    }
+
+    @include respond-to('tab') {
+        min-width: auto;
+    }
+}
+
+
+
+.prague-nights-info-row.second {
+    flex-direction: column;
+    background: #fafafa;
+    border: 1px solid #ced4da;
+    border-radius: clamp-px(16, 20);
+    padding: clamp-px(20, 30) clamp-px(15, 20);
+
+    & p {
+        text-align: center;
+        color: var(--black);
+    }
+}
+
+.prague-nights-info-row__top {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    margin-bottom: clamp-px(30, 92);
+
+    @include respond-to('tel') {
+        flex-direction: column;
+    }
+
+
+}
+
+.prague-nights-info-row__top-img {
+    position: relative;
+    width: clamp-px(150, 278);
+    aspect-ratio: 1/1;
+}
+
+.prague-nights-info-row__top-title {
+    font-weight: 800;
+    font-size: clamp-px(22, 52);
+    text-transform: uppercase;
+    text-align: center;
+    color: #9f000c;
+    line-height: 120%;
+}

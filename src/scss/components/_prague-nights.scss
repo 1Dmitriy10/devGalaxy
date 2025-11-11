@@ -1,0 +1,157 @@
+.prague-nights__btn-menu {
+    font-size: clamp(0.875rem, 0.8168424318rem + 0.2481389578vw, 1.0625rem);
+    max-width: fit-content;
+
+    @include respond-to('tel') {
+        max-width: 100%;
+    }
+}
+
+.prague-nights-brewery {
+    position: relative;
+    overflow: hidden;
+}
+
+.prague-nights-brewery__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: clamp-px(420, 803);
+    overflow: hidden;
+}
+
+.prague-nights-brewery__container {
+    padding-top: clamp-px(25, 80);
+    padding-bottom: clamp-px(50, 120);
+    position: relative;
+    z-index: 2;
+
+    & p {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: clamp-px(14, 17);
+        line-height: 150%;
+        color: #000;
+    }
+}
+
+.prague-nights-brewery__slider-wrap {
+    margin-top: clamp-px(20, 40);
+    position: relative;
+    margin-bottom: clamp-px(30, 60);
+}
+
+.brewery__slider {
+
+    & .galery-tabs__slid {
+        aspect-ratio: 1 / 0.43;
+        border-radius: clamp-px(10, 20);
+    }
+}
+
+.brewery__slider-btn-prev {
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -140px;
+
+    @media (width < 1800px) {
+        margin-left: -70px;
+    }
+
+    @media (width < 1600px) {
+        margin-left: 0;
+    }
+}
+
+.brewery__slider-btn-next {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    margin-right: -140px;
+
+    @media (width < 1800px) {
+        margin-right: -70px;
+    }
+
+    @media (width < 1600px) {
+        margin-right: 0;
+    }
+}
+
+#brewery__pagination {
+    width: 100%;
+    justify-content: center;
+    bottom: 10px !important;
+}
+
+.prague-nights-brewery__bottom {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    @include respond-to('nout') {
+        flex-direction: column;
+    }
+}
+
+.prague-nights-brewery__bottom-left-col {
+    flex: 1 1 auto;
+    max-width: 620px;
+    display: flex;
+    flex-direction: column;
+}
+
+.prague-nights-brewery__bottom-left-col-title {
+    font-weight: 700;
+    font-size: clamp-px(22, 36);
+    line-height: 150%;
+    text-transform: uppercase;
+    color: var(--black);
+    margin-bottom: clamp-px(20, 40);
+
+    @include respond-to('tel') {
+        text-align: center;
+    }
+}
+
+.prague-nights-brewery__bottom-left-col-text {
+    display: flex;
+    flex-direction: column;
+
+    & p {
+        font-weight: 400;
+        font-size: clamp-px(14, 17);
+        line-height: 150%;
+        color: var(--black);
+
+        &:not(:last-child) {
+            margin-bottom: clamp-px(15, 20);
+        }
+    }
+}
+
+.prague-nights-brewery__bottom-right-col {
+    flex: 1 1 auto;
+    max-width: 710px;
+    min-width: 560px;
+    display: flex;
+    gap: 20px;
+
+    @include respond-to('nout') {
+        max-width: 100%;
+        min-width: auto;
+    }
+}
+
+.prague-nights-brewery__bottom-right-col-img {
+    position: relative;
+    flex: 0 1 calc((100% - 20px * 1) / 2);
+    // aspect-ratio: 1/1.22;
+    min-height: clamp-px(200, 420);
+
+    @include respond-to('nout') {
+        min-height: clamp-px(200, 420);
+        aspect-ratio: 1/1.25;
+    }
+}
