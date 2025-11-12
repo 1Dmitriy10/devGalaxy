@@ -39,14 +39,20 @@
 .prague-nights-brewery__slider-wrap {
     margin-top: clamp-px(20, 40);
     position: relative;
-    margin-bottom: clamp-px(30, 60);
+    margin-bottom: clamp-px(60, 60);
 }
 
 .brewery__slider {
 
     & .galery-tabs__slid {
-        aspect-ratio: 1 / 0.43;
+
+        height: clamp-px(180, 720);
         border-radius: clamp-px(10, 20);
+        overflow: hidden;
+
+        & .img-bg {
+            border-radius: clamp-px(10, 20);
+        }
     }
 }
 
@@ -82,7 +88,7 @@
 #brewery__pagination {
     width: 100%;
     justify-content: center;
-    bottom: 10px !important;
+    bottom: -30px !important;
 }
 
 .prague-nights-brewery__bottom {
@@ -149,6 +155,12 @@
     flex: 0 1 calc((100% - 20px * 1) / 2);
     // aspect-ratio: 1/1.22;
     min-height: clamp-px(200, 420);
+    border-radius: clamp-px(16, 20);
+    overflow: hidden;
+
+    & .img-bg {
+        border-radius: clamp-px(16, 20);
+    }
 
     @include respond-to('nout') {
         min-height: clamp-px(200, 420);

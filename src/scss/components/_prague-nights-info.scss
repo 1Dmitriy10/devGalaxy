@@ -128,7 +128,7 @@
     align-items: center;
     gap: 10px;
     justify-content: space-between;
-    margin-bottom: clamp-px(30, 92);
+    margin-bottom: 20px;
 
     @include respond-to('tel') {
         flex-direction: column;
@@ -140,6 +140,7 @@
 .prague-nights-info-row__top-img {
     position: relative;
     width: clamp-px(150, 278);
+    min-width: clamp-px(150, 278);
     aspect-ratio: 1/1;
 }
 
